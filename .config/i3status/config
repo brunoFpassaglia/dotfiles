@@ -1,0 +1,98 @@
+general {
+       output_format = "i3bar"
+       colors = true
+       interval = 5
+       color_good = "#1793d0"
+    color_bad = "#FF0000"
+    color_degraded = "#dddddd"
+    color_separator = "#FF0000"
+}
+
+#order += "ipv6"
+#order += "disk /"
+#order += "run_watch DHCP"
+#order += "run_watch VPNC"
+#order += "path_exists VPN"
+order += "wireless _first_"
+#order += "ethernet eth0"
+order += "battery all"
+#order += "cpu_temperature 0"
+#order += "memory"
+#order += "load"
+order += "tztime local"
+#order += "tztime berlin"
+order += "keyboard_locks"
+
+# only show if enabled
+#keyboard_locks {
+#    format = '\?color=good [\?if=num_lock NUM][\?soft  ]'
+#    format += '[\?if=caps_lock CAPS][\?soft  ][\?if=scroll_lock SCR]'
+#}
+
+wireless _first_ {
+        format_up = " %essid, %bitrate"
+        format_down = "Not connected"
+}
+
+ethernet eth0 {
+        format_up = "E: %ip (%speed)"
+        format_down = "E: down"
+}
+
+battery all {
+        format = "%status %percentage %remaining %emptytime"
+        format_down = "No battery"
+        status_chr = "⚡ Charging..."
+        status_bat = "🔋  BAT"
+        status_unk = "? UNK"
+        status_full = "☻ FULL"
+       # path = "/sys/class/power_supply/BAT%d/uevent"
+        low_threshold = 10
+}
+
+run_watch DHCP {
+        pidfile = "/var/run/dhclient*.pid"
+}
+
+run_watch VPNC {
+        # file containing the PID of a vpnc process
+        pidfile = "/var/run/vpnc/pid"
+}
+
+path_exists VPN {
+        # path exists when a VPN tunnel launched by nmcli/nm-applet is active
+        path = "/proc/sys/net/ipv4/conf/tun0"
+}
+
+tztime local {
+        format = " %d-%m-%Y %H:%M:%S"
+#        hide_if_equals_localtime = true
+}
+
+tztime berlin {
+        format = " %Y-%m-%d %H:%M:%S %Z"
+        timezone = "Europe/Berlin"
+}
+
+load {
+        format = "%5min"
+}
+
+cpu_temperature 0 {
+        format = "T: %degrees °C"
+        path = "/sys/devices/platform/coretemp.0/temp1_input"
+}
+
+memory {
+        format = "%used"
+        threshold_degraded = "10%"
+        format_degraded = "MEMORY: %free"
+}
+
+disk "/" {
+        format = "%free"
+}
+
+read_file uptime {
+        path = "/proc/uptime"
+}

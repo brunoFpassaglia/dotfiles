@@ -1,0 +1,55 @@
+{
+  "editor.lineNumbers": "on",
+  "editor.matchBrackets": "always",
+  "editor.cursorBlinking": "expand",
+  "editor.minimap.enabled": false,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.statusBar.feedback.visible": false,
+  "workbench.tree.indent": 15,
+  "workbench.iconTheme": "vscode-icons",
+  "editor.fontLigatures": true,
+  "explorer.openEditors.visible": 5,
+  "sync.gist": "7e7408a76e1115c4d15cfe23005c42c2",
+  "vsicons.dontShowNewVersionMessage": true,
+  "workbench.statusBar.visible": true,
+  "workbench.editor.enablePreview": false,
+  "editor.renderWhitespace": "all",
+  "window.zoomLevel": 0,
+  "editor.quickSuggestionsDelay": 100,
+  //theme
+  "workbench.colorTheme": "Cobalt2",
+  "window.menuBarVisibility": "toggle",
+  
+  "editor.fontFamily": "Cascadia Code",
+  "terminal.integrated.fontFamily": "InconsolataGo Nerd Font Mono",
+  "scm.defaultViewMode": "tree",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.cursorWidth": 2,
+  
+  // vim extension keybindings
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-e>": false,
+    "<C-d>": true,
+  },
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["Z", "Z"],
+      "commands": [
+        ":wq",
+      ]
+    }
+  ],
+  "vim.highlightedyank.enable": true,
+  "vim.useCtrlKeys": true,
+  "workbench.editor.tabSizing": "shrink",
+  "keyboard.dispatch": "keyCode",
+  "editor.fontSize": 16,
+  "intelephense.diagnostics.undefinedSymbols": false,
+  "workbench.activityBar.visible": true,
+}
