@@ -59,7 +59,7 @@ font-0 = "InconsolataGo Nerd Font:pixelsize=12;1"
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = "InconsolataGo Nerd Font:pixelsize=12;1"
 
-modules-left = i3 xkeyboard
+modules-left = i3 xkeyboard polypomo
 modules-center = mpd battery
 modules-right = xbacklight alsa memory cpu wlan eth temperature date 
 
@@ -369,6 +369,18 @@ animation-discharging-1 = 
 animation-discharging-2 = 
 animation-discharging-foreground = ${colors.foreground-alt}
 animation-discharging-framerate = 750
+
+
+[module/polypomo]
+type = custom/script
+exec = ~/.config/polybar/polypomo/polypomo
+tail = true
+label = %output%
+click-left = ~/.config/polybar/polypomo/polypomo toggle
+click-right = ~/.config/polybar/polypomo/polypomo end
+click-middle = ~/.config/polybar/polypomo/polypomo lock
+scroll-up = ~/.config/polybar/polypomo/polypomo time +5
+scroll-down = ~/.config/polybar/polypomo/polypomo time -5
 
 [module/temperature]
 type = internal/temperature

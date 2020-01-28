@@ -51,5 +51,5 @@
   "keyboard.dispatch": "keyCode",
   "editor.fontSize": 16,
   "intelephense.diagnostics.undefinedSymbols": false,
-  "workbench.activityBar.visible": true,
+  "workbench.activityBar.visible": false,
 }
