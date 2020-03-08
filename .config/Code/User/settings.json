@@ -14,7 +14,7 @@
   "workbench.statusBar.visible": true,
   "workbench.editor.enablePreview": false,
   "editor.renderWhitespace": "all",
-  "window.zoomLevel": 0,
+  "window.zoomLevel": -1,
   "editor.quickSuggestionsDelay": 100,
   //theme
   "workbench.colorTheme": "Cobalt2",
@@ -52,4 +52,5 @@
   "editor.fontSize": 16,
   "intelephense.diagnostics.undefinedSymbols": false,
   "workbench.activityBar.visible": false,
+  "terminal.integrated.rendererType": "dom",
 }
