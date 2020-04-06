@@ -14,7 +14,7 @@
   "workbench.statusBar.visible": true,
   "workbench.editor.enablePreview": false,
   "editor.renderWhitespace": "all",
-  "window.zoomLevel": -1,
+  "window.zoomLevel": 0,
   "editor.quickSuggestionsDelay": 100,
   //theme
   "workbench.colorTheme": "Cobalt2",
@@ -49,8 +49,19 @@
   "vim.useCtrlKeys": true,
   "workbench.editor.tabSizing": "shrink",
   "keyboard.dispatch": "keyCode",
-  "editor.fontSize": 16,
+  "editor.fontSize": 14,
   "intelephense.diagnostics.undefinedSymbols": false,
   "workbench.activityBar.visible": false,
   "terminal.integrated.rendererType": "dom",
+  "open-in-browser.default": "chromium",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "vue"
+  ],
+  "[vue]": {},
+  "emmet.includeLanguages": {
+    "vue": "html"
+},
 }

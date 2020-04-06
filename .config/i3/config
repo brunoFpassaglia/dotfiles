@@ -203,9 +203,9 @@ set $Locker i3lock && sleep 1
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
-    bindsym l exec --no-startup-id i3lock -i ./Pictures/66068.png -t -f, mode "default"
+    bindsym l exec --no-startup-id i3lock -i ./Pictures/wallpapers/BVkgYv1.png -t -f, mode "default"
     bindsym e exec --no-startup-id i3-msg exit, mode "default"
-    bindsym s exec --no-startup-id i3lock -i ./Pictures/66068.png -t -f && systemctl suspend, mode "default"
+    bindsym s exec --no-startup-id i3lock -i ./Pictures/wallpapers/BVkgYv1.png -t -f && systemctl suspend, mode "default"
     #bindsym h exec --no-startup-id $Locker && systemctl hibernate, mode "default"
     bindsym r exec --no-startup-id systemctl reboot, mode "default"
     bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"  
@@ -286,6 +286,7 @@ focus_on_window_activation focus
 bindsym XF86HomePage exec chromium
 bindsym XF86Calculator exec code
 bindsym XF86Mail exec spotify
+bindsym $mod+Print exec "maim -s ~/Pictures/screenshots/$(date +%s).png" 
 #bindsym XF86Search exec --no-startup-id "i3-msg 'workspace 1; append_layout ~/.config/i3/workspace-1.json; exec chromium; exec code; exec termite'"
 
 bindsym XF86Search exec --no-startup-id "i3-msg 'workspace 1; append_layout ~/.config/i3/workspace-1.json; exec termite -d ~/Documents/Projects/Projects; exec code; exec chromium --app='https://www.udemy.com/''"
