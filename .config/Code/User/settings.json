@@ -5,7 +5,7 @@
   "editor.minimap.enabled": false,
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.statusBar.feedback.visible": false,
-  "workbench.tree.indent": 15,
+  "workbench.tree.indent": 6,
   "workbench.iconTheme": "vscode-icons",
   "editor.fontLigatures": true,
   "explorer.openEditors.visible": 5,
@@ -51,7 +51,7 @@
   "keyboard.dispatch": "keyCode",
   "editor.fontSize": 14,
   "intelephense.diagnostics.undefinedSymbols": false,
-  "workbench.activityBar.visible": false,
+  "workbench.activityBar.visible": true,
   "terminal.integrated.rendererType": "dom",
   "open-in-browser.default": "chromium",
   "editor.multiCursorModifier": "ctrlCmd",
@@ -63,5 +63,7 @@
   "[vue]": {},
   "emmet.includeLanguages": {
     "vue": "html"
-},
+  },
+
+
 }
