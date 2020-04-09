@@ -238,8 +238,14 @@ bindsym $mod+x mode "$mode_display"
 
 #personal workspaces anasdfhhd
 workspace $ws1 output HDMI1
+workspace $ws3 output HDMI1
+workspace $ws5 output HDMI1
+workspace $ws7 output HDMI1
 ###workspace 1 output HDMI1
 workspace $ws2 output eDP1
+workspace $ws4 output eDP1
+workspace $ws6 output eDP1
+workspace $ws8 output eDP1
 
 
 #personal windows draw
@@ -248,27 +254,27 @@ set $black              #282A2E
 set $grey               #373B41
 set $lightgrey          #707880
 set $white              #0b1c2c
-set $yellow             #F0C674
-set $red                #COD6E2
+set $yellow             #FFFF00
+set $red                #FF0000
 set $darkred            #A54242
 set $green              #56bf8b
 set $teal		#568bbf
 set $purple		#bf568b
 
 #class                  border      backgr.     text        split
-client.focused          $green		$green       $black    $purple
-client.focused_inactive $green		$teal     $lightgrey $purple
-client.unfocused        $green		$teal     $lightgrey $purple
-client.urgent           $green		$teal    $black      $purple
+client.focused          $green		$purple       $black    $green
+client.focused_inactive $green		$black     $lightgrey $black
+client.unfocused        $green		$black     $lightgrey $black
+client.urgent           $green		$black    $black      $black
 
 for_window [class=".*"] border pixel 3
 #gaps inner 12
-#gaps outer 0
-gaps inner 6
+gaps outer -12
+gaps inner 15
 exec --no-startup-id xrandr --output HDMI1 --auto --right-of eDP1
+exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 exec_always --no-startup-id /home/passaglia/.config/polybar/launch.sh & 
 exec --no-startup-id feh --bg-fill ~/Pictures//wallpapers/42.jpg
-exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 #hide_edge_borders smart
 #
 #assign brightness keys
@@ -288,5 +294,3 @@ bindsym XF86Calculator exec code
 bindsym XF86Mail exec spotify
 bindsym $mod+Print exec "maim -s ~/Pictures/screenshots/$(date +%s).png" 
 #bindsym XF86Search exec --no-startup-id "i3-msg 'workspace 1; append_layout ~/.config/i3/workspace-1.json; exec chromium; exec code; exec termite'"
-
-bindsym XF86Search exec --no-startup-id "i3-msg 'workspace 1; append_layout ~/.config/i3/workspace-1.json; exec termite -d ~/Documents/Projects/Projects; exec code; exec chromium --app='https://www.udemy.com/''"
