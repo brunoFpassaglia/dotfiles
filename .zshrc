@@ -11,6 +11,10 @@ fi
 # Path to your oh-my-zsh installation.
 export ZSH="/home/passaglia/.oh-my-zsh"
 
+# path to flutter
+export PATH="$PATH:/home/passaglia/Downloads/aur/flutter/bin"
+export JAVA_HOME="/usr/lib/jvm/java-13-openjdk"
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME

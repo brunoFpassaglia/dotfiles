@@ -59,9 +59,9 @@ font-0 = "InconsolataGo Nerd Font:pixelsize=10;1"
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = "InconsolataGo Nerd Font:pixelsize=12;1"
 
-modules-left = i3 xkeyboard filesystem
-modules-center = 
-modules-right = battery xbacklight alsa wlan eth temperature date
+modules-left = i3 wlan eth battery temperature xkeyboard xbacklight 
+modules-center = date
+modules-right = alsa filesystem
 
 tray-position = right
 tray-padding = 1
@@ -109,9 +109,8 @@ label-active-font = 2
 
 mount-0 = /
 mount-1 = /home
-mount-2 = /home/passaglia/Documents/Arquivos
 
-label-mounted = %mountpoint%: %used% of %total% (%percentage_free%% free)
+label-mounted = %{F#bf568b}%mountpoint%%{F-}: %used% of %total% %{F#56BF8B}(%percentage_free%% free)%{F-}
 label-unmounted = Arquivos not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 label-mounted-foreground = ${colors.green}
@@ -162,15 +161,15 @@ label-separator-foreground = ${colors.teal}
 type = internal/xbacklight
 
 format = <label> <bar>
-label = BL
+label =  
 
 bar-width = 10
 bar-indicator = |
-bar-indicator-foreground = #fff
+bar-indicator-foreground = #55aa55
 bar-indicator-font = 2
 bar-fill = ─
 bar-fill-font = 2
-bar-fill-foreground = #9f78e1
+bar-fill-foreground = ${colors.primary}
 bar-empty = ─
 bar-empty-font = 2
 bar-empty-foreground = ${colors.foreground-alt}
@@ -205,7 +204,7 @@ format-connected = <ramp-signal>  <label-connected>
 #format-connected-underline = #9f78e1
 label-connected = %essid%
 
-format-disconnected = 睊
+format-disconnected = %{F#bf568b}睊{F-}
 ;format-disconnected = <label-disconnected>
 ;format-disconnected-underline = ${self.format-connected-underline}
 ;label-disconnected = %ifname% disconnected
@@ -216,7 +215,7 @@ ramp-signal-1 = 
 ramp-signal-2 = 
 ramp-signal-3 = 
 ramp-signal-4 = 
-ramp-signal-foreground = ${colors.primary}
+ramp-signal-foreground = ${colors.purple}
 
 [module/eth]
 type = internal/network
@@ -348,8 +347,7 @@ format = <ramp> <label>
 format-warn = <ramp> <label-warn>
 #format-warn-underline = ${self.format-underline}
 
-label =  %temperature-c%
-label-foreground = ${colors.purple}
+label = %{F#bf568b}%{F-} %temperature-c%
 label-warn = %temperature-c%
 label-warn-foreground = ${colors.secondary}
 

@@ -64,6 +64,9 @@
   "emmet.includeLanguages": {
     "vue": "html"
   },
+  "workbench.editor.closeOnFileDelete": true,
+  "git.confirmSync": false,
+  "diffEditor.renderSideBySide": true,
 
 
 }
