@@ -81,5 +81,9 @@
         {
                 "key": "ctrl+shift+k ctrl+shift+f",
                 "command": "eslint.executeAutofix"
+        },
+        {
+                "key": "ctrl+d",
+                "command": "extension.vim_ctrl+d"
         }
 ]

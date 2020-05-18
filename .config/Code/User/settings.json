@@ -67,6 +67,9 @@
   "workbench.editor.closeOnFileDelete": true,
   "git.confirmSync": false,
   "diffEditor.renderSideBySide": true,
+"editor.detectIndentation": false,
+"editor.tabSize": 6,
+"vetur.format.options.tabSize": 4,
 
 
 }
