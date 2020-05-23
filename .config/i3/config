@@ -201,7 +201,7 @@ bindsym $mod+r mode "resize"
 #shutdown, reboot and lock screen
 set $Locker i3lock && sleep 1
 
-set $mode_system System (l) lockkk, (e) logout, (s) suspend, (r) reboot, (Shift+s) shutdown
+set $mode_system System (l) lock, (e) logout, (s) suspend, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
     bindsym l exec --no-startup-id i3lock -i ./Pictures/wallpapers/BVkgYv1.png -t -f, mode "default"
     bindsym e exec --no-startup-id i3-msg exit, mode "default"
@@ -284,7 +284,7 @@ gaps inner 15
 exec --no-startup-id xrandr --output HDMI1 --auto --right-of eDP1
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 exec_always --no-startup-id /home/passaglia/.config/polybar/launch.sh & 
-exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/close-up-of-computer-keyboard-249203.jpg
+exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/space3.jpg
 #hide_edge_borders smart
 #
 #assign brightness keys
