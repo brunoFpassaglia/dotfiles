@@ -70,6 +70,7 @@
 "editor.detectIndentation": false,
 "editor.tabSize": 6,
 "vetur.format.options.tabSize": 4,
+"gitlens.mode.active": "zen",
 
 
 }
