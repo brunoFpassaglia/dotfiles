@@ -1,75 +1,96 @@
 {
-  "editor.lineNumbers": "on",
-  "editor.matchBrackets": "always",
-  "editor.cursorBlinking": "expand",
-  "editor.minimap.enabled": false,
-  "workbench.editor.highlightModifiedTabs": true,
-  "workbench.statusBar.feedback.visible": false,
-  "workbench.tree.indent": 6,
-  "workbench.iconTheme": "vscode-icons",
-  "editor.fontLigatures": true,
-  "explorer.openEditors.visible": 5,
-  "sync.gist": "7e7408a76e1115c4d15cfe23005c42c2",
-  "vsicons.dontShowNewVersionMessage": true,
-  "workbench.statusBar.visible": true,
-  "workbench.editor.enablePreview": false,
-  "editor.renderWhitespace": "all",
-  "window.zoomLevel": 0,
-  "editor.quickSuggestionsDelay": 100,
-  //theme
-  "workbench.colorTheme": "Cobalt2",
-  "window.menuBarVisibility": "toggle",
-  
-  "editor.fontFamily": "Cascadia Code",
-  "terminal.integrated.fontFamily": "InconsolataGo Nerd Font Mono",
-  "scm.defaultViewMode": "tree",
-  "diffEditor.ignoreTrimWhitespace": false,
-  "editor.cursorWidth": 2,
-  
-  // vim extension keybindings
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
-    }
-  ],
-  "vim.handleKeys": {
-    "<C-e>": false,
-    "<C-d>": true,
-  },
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": ["Z", "Z"],
-      "commands": [
-        ":wq",
-      ]
-    }
-  ],
-  "vim.highlightedyank.enable": true,
-  "vim.useCtrlKeys": true,
-  "workbench.editor.tabSizing": "shrink",
-  "keyboard.dispatch": "keyCode",
-  "editor.fontSize": 14,
-  "intelephense.diagnostics.undefinedSymbols": false,
-  "workbench.activityBar.visible": true,
-  "terminal.integrated.rendererType": "dom",
-  "open-in-browser.default": "chromium",
-  "editor.multiCursorModifier": "ctrlCmd",
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "vue"
-  ],
-  "[vue]": {},
-  "emmet.includeLanguages": {
-    "vue": "html"
-  },
-  "workbench.editor.closeOnFileDelete": true,
-  "git.confirmSync": false,
-  "diffEditor.renderSideBySide": true,
-"editor.detectIndentation": false,
-"vetur.format.options.tabSize": 4,
-"gitlens.mode.active": "zen",
+    //=================editor====================
+    "editor.lineNumbers": "on",
+    "editor.matchBrackets": "always",
+    "editor.cursorBlinking": "expand",
+    "editor.minimap.enabled": false,
+    "editor.cursorStyle": "line",
+    "editor.fontFamily": "Cascadia Code",
+    "editor.fontLigatures": true,
+    "editor.renderWhitespace": "all",
+    "editor.quickSuggestionsDelay": 100,
+    "editor.cursorWidth": 2,
+    "editor.fontSize": 14,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.detectIndentation": false,
+    //============end of editor==================//
+    
+    
+    
+    //=============workbench========================//
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.statusBar.feedback.visible": false,
+    "workbench.tree.indent": 20,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.statusBar.visible": true,
+    "workbench.editor.enablePreview": false,
+    "workbench.colorTheme": "Cobalt2",
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.activityBar.visible": true,
+    "workbench.editor.closeOnFileDelete": true,
+	//======end of workbench========================//
+
+    "explorer.openEditors.visible": 5,
+    "vsicons.dontShowNewVersionMessage": true,
+    "window.zoomLevel": 0,
+
+    //=======================theme==================//
+    "window.menuBarVisibility": "toggle",
+    "terminal.integrated.fontFamily": "InconsolataGo Nerd Font Mono",
+    "scm.defaultViewMode": "tree",
+    "diffEditor.ignoreTrimWhitespace": false,
+    //===================end of theme==================//
+
+    //=================vim extension keybindings========//
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.handleKeys": {
+        "<C-e>": false,
+        "<C-d>": true,
+	},
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "Z",
+                "Z"
+            ],
+            "commands": [
+                ":wq",
+            ]
+        }
+    ],
+    "vim.highlightedyank.enable": true,
+    "vim.useCtrlKeys": true,
+	// ===========end of vim extensions===========//
 
 
+
+	"keyboard.dispatch": "keyCode",
+    "intelephense.diagnostics.undefinedSymbols": false,
+    "workbench.activityBar.visible": true,
+    "terminal.integrated.rendererType": "dom",
+    "open-in-browser.default": "chromium",
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "vue"
+    ],
+    "[vue]": {},
+    "emmet.includeLanguages": {
+        "vue": "html"
+    },
+    "workbench.editor.closeOnFileDelete": true,
+    "git.confirmSync": false,
+    "diffEditor.renderSideBySide": true,
+    "vetur.format.options.tabSize": 4,
+    "gitlens.mode.active": "zen",
 }
