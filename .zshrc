@@ -13,6 +13,7 @@ export ZSH="/home/passaglia/.oh-my-zsh"
 
 # path to flutter
 export PATH="$PATH:/home/passaglia/Downloads/aur/flutter/bin"
+export PATH="~/.npm-global/bin:$PATH"
 export JAVA_HOME="/usr/lib/jvm/default-runtime"
 
 # Set name of the theme to load --- if set to "random", it will
