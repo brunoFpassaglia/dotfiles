@@ -44,9 +44,10 @@ bindsym $mod+Return exec i3-sensible-terminal
 #######
 # kill focused window
 bindsym $mod+Shift+q kill
+bindsym $mod+Delete kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec --no-startup-id dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -292,8 +293,13 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 10%
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10%
 #
 #assign programs to workspaces
-for_window [class="Spotify"] move to workspace $ws9
+#for_window [class="Spotify"] move to workspace $ws9
 focus_on_window_activation focus
+for_window [class="^Notion$"] move to workspace $ws3
+for_window [class="^Galculator$"] floating enable
+for_window [class="^Steam$"] floating enable move to workspace $ws4
+for_window [class="^Steam$" title="^Steam$"] floating disable
+for_window [class="^TelegramDesktop$"] move to workspace $ws3
 
 
 
@@ -303,4 +309,5 @@ bindsym XF86HomePage exec chromium
 bindsym XF86Calculator exec code
 bindsym XF86Mail exec spotify
 bindsym $mod+Print exec "maim -s ~/Pictures/screenshots/$(date +%s).png" 
-#bindsym XF86Search exec --no-startup-id "i3-msg 'workspace 1; append_layout ~/.config/i3/workspace-1.json; exec chromium; exec code; exec termite'"
+bindsym $mod+F1 exec --no-startup-id "i3-msg 'workspace 3; append_layout ~/.config/i3/workspace3.json; exec notion-app; exec telegram-desktop; workspace 2; append_layout ~/.config/i3/workspace2.json; exec spotify; exec termite -e htop; exec termite'"
+#bindsym XF86Search exec --no-startup-id "i3-msg 'workspace 2; append_layout ~/.config/i3/workspace2.json; exec spotify; exec termite -e htop; exec termite'"

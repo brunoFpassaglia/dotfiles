@@ -13,10 +13,11 @@
     "editor.fontSize": 14,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.detectIndentation": false,
+    "editor.rulers": [
+        80,
+        120
+    ],
     //============end of editor==================//
-    
-    
-    
     //=============workbench========================//
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.statusBar.feedback.visible": false,
@@ -28,19 +29,20 @@
     "workbench.editor.tabSizing": "shrink",
     "workbench.activityBar.visible": true,
     "workbench.editor.closeOnFileDelete": true,
-	//======end of workbench========================//
-
+    "workbench.colorCustomizations": {
+        "editorRuler.foreground": "#bb0000",
+        "editorOverviewRuler.border": "#0000",
+    },
+    //======end of workbench========================//
     "explorer.openEditors.visible": 5,
     "vsicons.dontShowNewVersionMessage": true,
     "window.zoomLevel": 0,
-
     //=======================theme==================//
     "window.menuBarVisibility": "toggle",
     "terminal.integrated.fontFamily": "InconsolataGo Nerd Font Mono",
     "scm.defaultViewMode": "tree",
     "diffEditor.ignoreTrimWhitespace": false,
     //===================end of theme==================//
-
     //=================vim extension keybindings========//
     "vim.insertModeKeyBindings": [
         {
@@ -56,7 +58,7 @@
     "vim.handleKeys": {
         "<C-e>": false,
         "<C-d>": true,
-	},
+    },
     "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": [
@@ -70,13 +72,9 @@
     ],
     "vim.highlightedyank.enable": true,
     "vim.useCtrlKeys": true,
-	// ===========end of vim extensions===========//
-
-
-
-	"keyboard.dispatch": "keyCode",
+    // ===========end of vim extensions===========//
+    "keyboard.dispatch": "keyCode",
     "intelephense.diagnostics.undefinedSymbols": false,
-    "workbench.activityBar.visible": true,
     "terminal.integrated.rendererType": "dom",
     "open-in-browser.default": "chromium",
     "eslint.validate": [
@@ -88,9 +86,8 @@
     "emmet.includeLanguages": {
         "vue": "html"
     },
-    "workbench.editor.closeOnFileDelete": true,
     "git.confirmSync": false,
     "diffEditor.renderSideBySide": true,
     "vetur.format.options.tabSize": 4,
-    "gitlens.mode.active": "zen",
+    "gitlens.mode.active": "review",
 }
