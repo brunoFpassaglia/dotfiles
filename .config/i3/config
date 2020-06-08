@@ -156,9 +156,13 @@ mode "resize" {
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
         bindsym h resize shrink width 5 px or 2 ppt
+        bindsym H resize shrink width 15 px or 6 ppt
         bindsym j resize grow height 2 px or 2 ppt
+        bindsym J resize grow height 6 px or 6 ppt
         bindsym k resize shrink height 2 px or 2 ppt
+        bindsym K resize shrink height 6 px or 6 ppt
         bindsym l resize grow width 2 px or 2 ppt
+        bindsym L resize grow width 6 px or 6 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 2 px or 2 ppt
@@ -310,4 +314,5 @@ bindsym XF86Calculator exec code
 bindsym XF86Mail exec spotify
 bindsym $mod+Print exec "maim -s ~/Pictures/screenshots/$(date +%s).png" 
 bindsym $mod+F1 exec --no-startup-id "i3-msg 'workspace 3; append_layout ~/.config/i3/workspace3.json; exec notion-app; exec telegram-desktop; workspace 2; append_layout ~/.config/i3/workspace2.json; exec spotify; exec termite -e htop; exec termite'"
+bindsym $mod+F2 exec --no-startup-id "i3-msg 'workspace 1; append_layout ~/.config/i3/workspace1.json; exec code; exec chromium; exec termite'"
 #bindsym XF86Search exec --no-startup-id "i3-msg 'workspace 2; append_layout ~/.config/i3/workspace2.json; exec spotify; exec termite -e htop; exec termite'"
