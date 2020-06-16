@@ -1,93 +1,105 @@
 {
-    //=================editor====================
-    "editor.lineNumbers": "on",
-    "editor.matchBrackets": "always",
-    "editor.cursorBlinking": "expand",
-    "editor.minimap.enabled": false,
-    "editor.cursorStyle": "line",
-    "editor.fontFamily": "Cascadia Code",
-    "editor.fontLigatures": true,
-    "editor.renderWhitespace": "all",
-    "editor.quickSuggestionsDelay": 100,
-    "editor.cursorWidth": 2,
-    "editor.fontSize": 14,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.detectIndentation": false,
-    "editor.rulers": [
-        80,
-        120
-    ],
-    //============end of editor==================//
-    //=============workbench========================//
-    "workbench.editor.highlightModifiedTabs": true,
-    "workbench.statusBar.feedback.visible": false,
-    "workbench.tree.indent": 20,
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.statusBar.visible": true,
-    "workbench.editor.enablePreview": false,
-    "workbench.colorTheme": "Cobalt2",
-    "workbench.editor.tabSizing": "shrink",
-    "workbench.activityBar.visible": true,
-    "workbench.editor.closeOnFileDelete": true,
-    "workbench.colorCustomizations": {
-        "editorRuler.foreground": "#bb0000",
-        "editorOverviewRuler.border": "#0000",
-    },
-    //======end of workbench========================//
-    "explorer.openEditors.visible": 5,
-    "vsicons.dontShowNewVersionMessage": true,
-    "window.zoomLevel": 0,
-    //=======================theme==================//
-    "window.menuBarVisibility": "toggle",
-    "terminal.integrated.fontFamily": "InconsolataGo Nerd Font Mono",
-    "scm.defaultViewMode": "tree",
-    "diffEditor.ignoreTrimWhitespace": false,
-    //===================end of theme==================//
-    //=================vim extension keybindings========//
-    "vim.insertModeKeyBindings": [
-        {
-            "before": [
-                "j",
-                "j"
-            ],
-            "after": [
-                "<Esc>"
-            ]
-        }
-    ],
-    "vim.handleKeys": {
-        "<C-e>": false,
-        "<C-d>": true,
-    },
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "Z",
-                "Z"
-            ],
-            "commands": [
-                ":wq",
-            ]
-        }
-    ],
-    "vim.highlightedyank.enable": true,
-    "vim.useCtrlKeys": true,
-    // ===========end of vim extensions===========//
-    "keyboard.dispatch": "keyCode",
-    "intelephense.diagnostics.undefinedSymbols": false,
-    "terminal.integrated.rendererType": "dom",
-    "open-in-browser.default": "chromium",
-    "eslint.validate": [
-        "javascript",
-        "javascriptreact",
-        "vue"
-    ],
-    "[vue]": {},
-    "emmet.includeLanguages": {
-        "vue": "html"
-    },
-    "git.confirmSync": false,
-    "diffEditor.renderSideBySide": true,
-    "vetur.format.options.tabSize": 4,
-    "gitlens.mode.active": "review",
+  //=================editor====================
+  "editor.lineNumbers": "on",
+  "editor.matchBrackets": "always",
+  "editor.cursorBlinking": "expand",
+  "editor.minimap.enabled": false,
+  "editor.cursorStyle": "line",
+  "editor.fontFamily": "Cascadia Code",
+  "editor.fontLigatures": true,
+  "editor.renderWhitespace": "all",
+  "editor.quickSuggestionsDelay": 100,
+  "editor.cursorWidth": 2,
+  "editor.fontSize": 14,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.detectIndentation": false,
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wrappingIndent": "indent",
+  "editor.wordWrapColumn": 80,
+  //============end of editor==================//
+  //=============workbench========================//
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.statusBar.feedback.visible": false,
+  "workbench.tree.indent": 20,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.statusBar.visible": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.colorTheme": "Cobalt2",
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.activityBar.visible": true,
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.colorCustomizations": {
+    "editorRuler.foreground": "#bb0000",
+    "editorOverviewRuler.border": "#0000",
+  },
+  //======end of workbench========================//
+  "explorer.openEditors.visible": 5,
+  "vsicons.dontShowNewVersionMessage": true,
+  "window.zoomLevel": 0,
+  //=======================theme==================//
+  "window.menuBarVisibility": "toggle",
+  "terminal.integrated.fontFamily": "InconsolataGo Nerd Font Mono",
+  "scm.defaultViewMode": "tree",
+  "diffEditor.ignoreTrimWhitespace": false,
+  //===================end of theme==================//
+  //=================vim extension keybindings========//
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-e>": false,
+    "<C-d>": true,
+  },
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "Z",
+        "Z"
+      ],
+      "commands": [
+        ":wq",
+      ]
+    }
+  ],
+  "vim.highlightedyank.enable": true,
+  "vim.useCtrlKeys": true,
+  "vim.foldfix": true,
+  // ===========end of vim extensions===========//
+  "keyboard.dispatch": "keyCode",
+  "intelephense.diagnostics.undefinedSymbols": false,
+  "terminal.integrated.rendererType": "dom",
+  "open-in-browser.default": "chromium",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "vue"
+  ],
+  "[vue]": {},
+  "emmet.includeLanguages": {
+    "vue": "html"
+  },
+  "git.confirmSync": false,
+  "diffEditor.renderSideBySide": true,
+  "gitlens.mode.active": "review",
+  "editor.tabSize": 2,
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "indentRainbow.colors": [
+    "rgba(255,255,255,0.2)",
+    "rgba(127,255,127,0.2)",
+    "rgba(255,127,255,0.2)",
+    "rgba(79,236,236,0.2)"
+  ]
 }
