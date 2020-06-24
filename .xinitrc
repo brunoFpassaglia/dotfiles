@@ -50,4 +50,5 @@ fi
 xbindkeys
 setxkbmap -option "caps:escape_shifted_capslock"
 xrandr --output HDMI1 --auto --right-of eDP1
+/usr/lib/polkit-kde-authentication-agent-1 --no-debug
 exec i3
