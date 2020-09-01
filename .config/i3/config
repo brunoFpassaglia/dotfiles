@@ -35,9 +35,6 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+
 bindsym XF86AudioLowerVolume exec amixer -q set Master 5%-
 
-
-
-
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -145,7 +142,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
+bindsym $mod+Shift+r exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/arch.png, restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
@@ -289,7 +286,7 @@ gaps inner 15
 exec --no-startup-id xrandr --output HDMI1 --auto --right-of eDP1
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 exec_always --no-startup-id /home/passaglia/.config/polybar/launch.sh & 
-exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/space3.jpg
+exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/arch.png
 #hide_edge_borders smart
 #
 #assign brightness keys
@@ -312,10 +309,11 @@ for_window [class="^Termite$"] title_format " <b>%title</b>"
 
 
 #Start programs binds
-bindsym XF86HomePage exec chromium
-bindsym XF86Calculator exec code
-bindsym XF86Mail exec spotify
+bindsym XF86Mail exec chromium
+bindsym XF86Calculator exec galculator
+bindsym $mod+Shift+w exec connectWifi.sh
 bindsym $mod+Print exec "maim -s ~/Pictures/screenshots/$(date +%s).png" 
-bindsym $mod+F1 exec --no-startup-id "i3-msg 'workspace 3; append_layout ~/.config/i3/workspace3.json; exec notion-app; exec telegram-desktop; workspace 2; append_layout ~/.config/i3/workspace2.json; exec spotify; exec termite -e htop; exec termite'"
-bindsym $mod+F2 exec --no-startup-id "i3-msg 'workspace 1; append_layout ~/.config/i3/workspace1.json; exec code; exec chromium; exec termite'"
+bindsym $mod+F1 exec --no-startup-id "i3-msg 'workspace 1; append_layout ~/.config/i3/workspace1.json; exec code; exec chromium; exec termite'"
+bindsym $mod+F2 exec --no-startup-id "i3-msg 'workspace 2; append_layout ~/.config/i3/workspace2.json; exec spotify; exec termite -e htop; exec termite'"
+bindsym $mod+F3 exec --no-startup-id "i3-msg 'workspace 3; append_layout ~/.config/i3/workspace3.json; exec notion-app; exec telegram-desktop'"
 #bindsym XF86Search exec --no-startup-id "i3-msg 'workspace 2; append_layout ~/.config/i3/workspace2.json; exec spotify; exec termite -e htop; exec termite'"

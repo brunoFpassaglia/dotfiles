@@ -35,6 +35,10 @@
   "workbench.colorCustomizations": {
     "editorRuler.foreground": "#bb0000",
     "editorOverviewRuler.border": "#0000",
+    "scrollbarSlider.background": "#FFFF",
+    "activityBarBadge.foreground": "#FFF",
+    "editorGroup.border": "#FFF",
+    "badge.background": "#FFF",
   },
   //======end of workbench========================//
   "explorer.openEditors.visible": 5,
@@ -107,4 +111,5 @@
   "customizeUI.font.monospace": "Cascadia Code",
   "customizeUI.activityBar": "bottom",
   "customizeUI.listRowHeight": 16,
+  "workbench.tree.renderIndentGuides": "always",
 }

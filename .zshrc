@@ -14,8 +14,9 @@ export ZSH="/home/passaglia/.oh-my-zsh"
 # path to flutter
 export PATH="$PATH:/home/passaglia/Downloads/aur/flutter/bin"
 export PATH="~/.npm-global/bin:$PATH"
+export PATH="~/.local/bin:$PATH"
 export JAVA_HOME="/usr/lib/jvm/default-runtime"
-export NODE_ENV=""
+export SUDO_ASKPASS="/usr/bin/dpass.sh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
