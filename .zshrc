@@ -117,6 +117,11 @@ alias l='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
+alias att='sudo pacman -Syu'
+alias testall='php artisan test'
+alias atestall='./vendor/bin/phpunit'
+alias testf='php artisan test --filter'
+alias atestf='./vendor/bin/phpunit'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
