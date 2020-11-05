@@ -19,6 +19,7 @@
         ],
         "editor.wrappingIndent": "deepIndent",
         "editor.wordWrapColumn": 80,
+        "editor.lineNumbers": "relative"
         //============end of editor==================//
         //=============workbench========================//
         "workbench.editor.highlightModifiedTabs": true,
