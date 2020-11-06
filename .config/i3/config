@@ -313,7 +313,7 @@ bindsym XF86Mail exec chromium
 bindsym XF86Calculator exec galculator
 bindsym $mod+Shift+w exec connectWifi.sh
 bindsym $mod+Print exec "maim -s ~/Pictures/screenshots/$(date +%s).png" 
-bindsym $mod+F1 exec --no-startup-id "i3-msg 'workspace 1; append_layout ~/.config/i3/workspace1.json; exec code; exec chromium; exec termite'"
+bindsym $mod+F1 exec --no-startup-id "i3-msg 'workspace 1; append_layout ~/.config/i3/workspace1.json; exec termite; exec code; exec chromium'"
 bindsym $mod+F2 exec --no-startup-id "i3-msg 'workspace 2; append_layout ~/.config/i3/workspace2.json; exec spotify; exec termite -e htop; exec termite'"
 bindsym $mod+F3 exec --no-startup-id "i3-msg 'workspace 3; append_layout ~/.config/i3/workspace3.json; exec notion-app; exec telegram-desktop'"
 #bindsym XF86Search exec --no-startup-id "i3-msg 'workspace 2; append_layout ~/.config/i3/workspace2.json; exec spotify; exec termite -e htop; exec termite'"
