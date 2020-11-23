@@ -5,21 +5,23 @@
         "editor.cursorBlinking": "phase",
         "editor.minimap.enabled": false,
         "editor.cursorStyle": "line",
-        "editor.fontFamily": "Cascadia Code",
-        "editor.fontLigatures": true,
+        "editor.fontFamily": "Fira Code",
+        "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
         "editor.renderWhitespace": "all",
         "editor.quickSuggestionsDelay": 100,
         "editor.cursorWidth": 2,
-        "editor.fontSize": 14,
+        "editor.fontSize": 12,
         "editor.multiCursorModifier": "ctrlCmd",
         "editor.detectIndentation": false,
+        "editor.lineHeight": 18,
+        "editor.fontWeight": "400",
         "editor.rulers": [
             80,
             120
         ],
         "editor.wrappingIndent": "deepIndent",
         "editor.wordWrapColumn": 80,
-        "editor.lineNumbers": "relative"
+        "editor.lineNumbers": "relative",
         //============end of editor==================//
         //=============workbench========================//
         "workbench.editor.highlightModifiedTabs": true,
@@ -107,10 +109,10 @@
             "rgba(79,236,236,0.2)"
         ],
         "vetur.format.defaultFormatter.html": "js-beautify-html",
-        "customizeUI.font.regular": "Cascadia Code",
-        "customizeUI.font.monospace": "Cascadia Code",
+        "customizeUI.font.regular": "Fira Code",
+        "customizeUI.font.monospace": "Fira Code",
         "customizeUI.activityBar": "bottom",
-        "customizeUI.listRowHeight": 16,
+        "customizeUI.listRowHeight": 18,
         "customizeUI.fontSizeMap": {
             "13px": "13px",
             // "monospace": "8px"

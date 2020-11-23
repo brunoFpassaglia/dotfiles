@@ -217,9 +217,9 @@ mode "$mode_system" {
 
 bindsym $mod+Pause mode "$mode_system"
 
-set $monitor_mode External (a) 600x800, (b) 2560x1080
+set $monitor_mode External (a) 1024x768, (b) 2560x1080
 mode"$monitor_mode" {
-	bindsym a exec --no-startup-id xrandr --output HDMI1 --mode 800x600 --rate 75
+	bindsym a exec --no-startup-id xrandr --output HDMI1 --mode 1024x768 --rate 75
 	bindsym b exec --no-startup-id xrandr --output HDMI1 --mode 2560x1080 --rate 60
 	# back to normal: Enter or Escape
     bindsym Return mode "default"

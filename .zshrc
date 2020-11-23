@@ -122,10 +122,11 @@ alias testall='php artisan test'
 alias atestall='./vendor/bin/phpunit'
 alias testf='php artisan test --filter'
 alias atestf='./vendor/bin/phpunit'
+alias dots='/usr/bin/git --git-dir=/home/passaglia/.mydotfiles --work-tree=/home/passaglia'
+alias boostpf='sudo cpupower frequency-set -g performance'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
   exec startx
 fi
-alias dots='/usr/bin/git --git-dir=/home/passaglia/.mydotfiles --work-tree=/home/passaglia'
