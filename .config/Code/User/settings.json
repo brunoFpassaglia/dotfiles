@@ -1,13 +1,12 @@
     {
         //=================editor====================
-        "editor.lineNumbers": "on",
         "editor.matchBrackets": "always",
         "editor.cursorBlinking": "phase",
         "editor.minimap.enabled": false,
         "editor.cursorStyle": "line",
         "editor.fontFamily": "Fira Code",
         "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
-        "editor.renderWhitespace": "all",
+        "editor.renderWhitespace": "trailing",
         "editor.quickSuggestionsDelay": 100,
         "editor.cursorWidth": 2,
         "editor.fontSize": 12,
@@ -22,6 +21,8 @@
         "editor.wrappingIndent": "deepIndent",
         "editor.wordWrapColumn": 80,
         "editor.lineNumbers": "relative",
+        "editor.renderIndentGuides": false,
+        "editor.wordBasedSuggestions": false,
         //============end of editor==================//
         //=============workbench========================//
         "workbench.editor.highlightModifiedTabs": true,
@@ -117,6 +118,7 @@
             "13px": "13px",
             // "monospace": "8px"
         },
-        "workbench.tree.renderIndentGuides": "always",
-        "workbench.editor.highlightModifiedTabs": true,
+        "workbench.tree.renderIndentGuides": "none",
+        //language especific - dart //
+        "dart.previewFlutterUiGuides": true,
     }
