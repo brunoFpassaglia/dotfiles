@@ -1,6 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block, everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
@@ -8,15 +5,23 @@ fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Path to your oh-my-zsh installation.
+# Path to your oh-my-zsh installation.  export ZSH="/home/passaglia/.oh-my-zsh"
 export ZSH="/home/passaglia/.oh-my-zsh"
 
 # path to flutter
-export PATH="$PATH:/home/passaglia/Downloads/aur/flutter/bin"
-export PATH="~/.npm-global/bin:$PATH"
+export PATH="$PATH:/home/passaglia/Documentos/flutter/bin"
+# export PATH="$PATH:/opt/flutter/bin"
+export ANDROID_SDK_ROOT="/home/passaglia/Android"
+export PATH="~/.npm-global/bin:$PATH:$ANDROID_SDK_ROOT"
 export PATH="~/.local/bin:$PATH"
+#export PATH="$PATH:/home/passaglia/Android"
 export JAVA_HOME="/usr/lib/jvm/default-runtime"
-export SUDO_ASKPASS="/usr/bin/dpass.sh"
+#export SUDO_ASKPASS="/usr/bin/dpass.sh"
+export BEMENU_BACKEND="wayland"
+export _JAVA_AWT_WM_NONREPARENTING=1
+export GTK_THEME="Adwaita:dark"
+#export SDL_VIDEODRIVER="wayland"
+#export GDK_BACKEND=wayland
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -59,7 +64,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
 
-# Uncomment the following line to display red dots whilst waiting for completion.
+# Uncomment the following line to display red dot whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
@@ -112,21 +117,23 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ls='lsd'
-alias l='ls -l'
-alias la='ls -a'
-alias lla='ls -la'
-alias lt='ls --tree'
+##alias ls='lsd'
+#alias l='ls -l'
+#alias la='ls -a'
+#alias lla='ls -la'
+#alias lt='ls --tree'
 alias att='sudo pacman -Syu'
 alias testall='php artisan test'
 alias atestall='./vendor/bin/phpunit'
 alias testf='php artisan test --filter'
 alias atestf='./vendor/bin/phpunit'
-alias dots='/usr/bin/git --git-dir=/home/passaglia/.mydotfiles --work-tree=/home/passaglia'
+alias dots='/usr/bin/git --git-dir=/home/passaglia/.dotfiles --work-tree=/home/passaglia'
 alias boostpf='sudo cpupower frequency-set -g performance'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
-  exec startx
+
+# initialize sway on login
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+  XKB_DEFAULT_LAYOUT=us exec sway
 fi

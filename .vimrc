@@ -19,8 +19,3 @@ highlight Column ctermbg=0 guibg=lightgrey
 :set laststatus=2
 let g:Powerline_symbols = 'fancy'
 
-
-call plug#begin()
-Plug 'powerline/powerline'
-
-call plug#end()

@@ -1,8 +1,8 @@
 [options]
-font             = InconsolataGo Nerd Font Mono 12
+font             = Hack 10
 scrollback_lines = 10000
 clickable_url    = true
-browser          = chromium
+browser          = firefox
 allow_bold       = true
 allow_italic     = true
 visible_bell     = false
@@ -17,7 +17,7 @@ foreground          = #cbd6e2
 foreground_bold     = #e5ebf1
 cursor              = #e5ebf1
 cursor_foreground   = #0b1c2c
-background          = rgba(11, 28, 44)
+background          = #0B1C2C
 
 
 # 16 color space
