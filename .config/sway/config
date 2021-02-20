@@ -243,10 +243,10 @@ bar {
 }
 
 #border
-for_window [tiling] border pixel 3
-client.focused	#568bbf	#568bbf	#568bbf
-client.unfocused	#0B1C2C	#0B1C2C	#0B1C2C
-client.focused_inactive	#0B1C2C	#0B1C2C	#0B1C2C
+for_window [tiling] border pixel 2
+client.focused	#568bbf	#568bbf	#FFFFFF
+client.unfocused	#0B1C2C	#0B1C2C	#FFFFFF
+client.focused_inactive	#0B1C2C	#0B1C2C	#FFFFFF
 ## gaps
 gaps inner 13
 gaps outer -12
@@ -262,6 +262,7 @@ bindsym --locked XF86AudioPrev exec playerctl -p spotify previous
 
 #polkit
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec mako
 
 #inputs
 ## touchpad
@@ -283,9 +284,8 @@ input "type:keyboard" {
 include /etc/sway/config.d/*
 
 ##default floating windows
-for_window [title="Android Emulator.+"] {
-	floating enable
-	resize set [width] 430 [height] 655
+for_window [title="^Android Emulator - .+$"] {
+	resize set width 23 ppt
 }
+	
 for_window [app_id="galculator"] floating enable
-for_window [app_id="Emulator"] floating enable
