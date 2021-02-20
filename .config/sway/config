@@ -17,8 +17,8 @@ set $right l
 set $term termite
 
 #wallpaper
-output eDP-1 bg /home/passaglia/Images/wallpapers/arch.png stretch
-output HDMI-A-1 bg /home/passaglia/Images/wallpapers/arch.png fill
+output eDP-1 bg /home/passaglia/docs/Imagens/wallpapers/arch.png stretch
+output HDMI-A-1 bg /home/passaglia/docs/Imagens/wallpapers/arch.png fill
 output eDP-1 pos 0 0 res 1366x768
 output HDMI-A-1 pos 1366 0 res 2560x1080
 
@@ -217,7 +217,7 @@ mode "$display" {
 bindsym $mod+p mode "$display"
 
 ## 
-set $lock swaylock -f --image ./Images/wallpapers/working-pattern-internet-abstract-1089438.jpg -s stretch
+set $lock swaylock -f --image /home/passaglia/docs/Imagens/wallpapers/working-pattern-internet-abstract-1089438.jpg -s stretch
 set $mode_system System (l) lock, (s) suspend, (r) reboot, (Shift+s) shutdown (h) hibernate
 mode "$mode_system" {
     bindsym l exec $lock, mode "default"
