@@ -23,7 +23,7 @@ output eDP-1 pos 0 0 res 1366x768
 output HDMI-A-1 pos 1366 0 res 2560x1080
 
 #font
-font pango:Hack Medium 8
+font pango:Hack Medium 0
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
@@ -204,10 +204,12 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 ## display mode to change resolution
-set $display Resolucao HDMI: a) 1024x768 | b) 2560x1080 | c) HDMI off
+set $display Resolucao  HDMI: a) 1024x768 | b) 2560x1080 | c) HDMI off
 mode "$display" {
 	bindsym a output HDMI-A-1 pos 1366 0 res 1024x768@75Hz
 		bindsym b output HDMI-A-1 pos 1366 0 res 2560x1080
+		bindsym 1 output HDMI-A-1 pos 1366 0 res 1280x1024@75Hz
+		bindsym 2 output HDMI-A-1 pos 1366 0 res 1152x864@75Hz
 		bindsym c output HDMI-A-1 disable
 		bindsym l output HDMI-A-1 enable
 

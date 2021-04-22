@@ -1,4 +1,4 @@
-    {
+        {
         //=================editor====================
         "editor.matchBrackets": "always",
         "editor.cursorBlinking": "phase",
@@ -31,11 +31,9 @@
         "workbench.editor.highlightModifiedTabs": true,
         "workbench.statusBar.feedback.visible": false,
         "workbench.tree.indent": 8,
-        "workbench.statusBar.visible": true,
         "workbench.editor.enablePreview": false,
         "workbench.colorTheme": "Cobalt2",
         "workbench.editor.tabSizing": "fit",
-        "workbench.activityBar.visible": true,
         "workbench.editor.closeOnFileDelete": true,
         "workbench.colorCustomizations": {
             "editorRuler.foreground": "#bb0000",
@@ -61,7 +59,7 @@
         "explorer.openEditors.visible": 5,
         "vsicons.dontShowNewVersionMessage": true,
         //=======================theme==================//
-        "window.menuBarVisibility": "toggle",
+        "window.menuBarVisibility": "hidden",
         "terminal.integrated.fontFamily": "Fira Code",
         "terminal.integrated.fontSize": 12,
         "debug.console.fontSize": 12,
@@ -131,7 +129,7 @@
         "vetur.format.defaultFormatter.html": "js-beautify-html",
         "customizeUI.font.regular": "Fira Code",
         "customizeUI.font.monospace": "Fira Code",
-        "customizeUI.activityBar": "bottom",
+        "customizeUI.activityBar": "regular",
         "customizeUI.listRowHeight": 20,
         "customizeUI.fontSizeMap": {
             "13px": "13px",
@@ -160,7 +158,6 @@
             "editor.tabCompletion": "onlySnippets",
             "editor.wordBasedSuggestions": false
         },
-        "workbench.sideBar.location": "left",
         "dart.flutterSdkPath": "/home/passaglia/Documentos/flutter",
         //indent raibow: =========================================
         "indentRainbow.includedLanguages": [
@@ -194,5 +191,11 @@
         // error lens
         "errorLens.fontSize": "10px",
         "workbench.editor.decorations.badges": true,
+        "dart.showSkippedTests": true,
+        "workbench.startupEditor": "newUntitledFile",
+        "window.customMenuBarAltFocus": false,
+        "window.enableMenuBarMnemonics": false,
+        "dart.debugExternalLibraries": true,
+        "dart.debugSdkLibraries": true,
 
     }

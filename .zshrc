@@ -14,12 +14,16 @@ export PATH="$PATH:/home/passaglia/Documentos/flutter/bin"
 export ANDROID_SDK_ROOT="/home/passaglia/Android"
 export PATH="~/.npm-global/bin:$PATH:$ANDROID_SDK_ROOT"
 export PATH="~/.local/bin:$PATH"
+export PATH="/home/passaglia/npm-global/bin:$PATH"
+export PATH="/home/passaglia/.node_modules/bin:$PATH"
+export npm_config_prefix="~/.node_modules"
 #export PATH="$PATH:/home/passaglia/Android"
 export JAVA_HOME="/usr/lib/jvm/default-runtime"
 #export SUDO_ASKPASS="/usr/bin/dpass.sh"
 export BEMENU_BACKEND="wayland"
 export _JAVA_AWT_WM_NONREPARENTING=1
 export GTK_THEME="Adwaita:dark"
+#export XDEBUG_SESSION=1
 #export SDL_VIDEODRIVER="wayland"
 #export GDK_BACKEND=wayland
 
