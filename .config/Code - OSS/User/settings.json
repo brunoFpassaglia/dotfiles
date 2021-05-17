@@ -195,7 +195,7 @@
         "workbench.startupEditor": "newUntitledFile",
         "window.customMenuBarAltFocus": false,
         "window.enableMenuBarMnemonics": false,
-        "dart.debugExternalLibraries": true,
-        "dart.debugSdkLibraries": true,
+        "dart.debugExternalLibraries": false,
+        "dart.debugSdkLibraries": false,
 
     }
