@@ -210,6 +210,11 @@
     {
         "key": "ctrl+shift+s",
         "command": "workbench.action.files.saveFiles"
+    },
+    {
+        "key": "escape escape",
+        "command": "-workbench.action.exitZenMode",
+        "when": "inZenMode"
     }
 ]
 
