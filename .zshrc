@@ -25,7 +25,7 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 export GTK_THEME="Adwaita:dark"
 #export XDEBUG_SESSION=1
 #export SDL_VIDEODRIVER="wayland"
-#export GDK_BACKEND=wayland
+#export GDK_BACKEND="wayland"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,

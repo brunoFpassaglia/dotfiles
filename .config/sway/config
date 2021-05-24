@@ -69,6 +69,7 @@ bindsym $mod+Return exec $term
 # Kill focused window
 bindsym $mod+Shift+q kill
 bindsym $mod+Delete kill
+bindsym $mod+Print exec grim -g "$(slurp)" - | wl-copy
 
 # Start your launcher
 #	bindsym $mod+d exec $menu

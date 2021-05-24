@@ -127,14 +127,15 @@
             "rgba(16,16,16,1.0)"
         ],
         "vetur.format.defaultFormatter.html": "js-beautify-html",
-        "customizeUI.font.regular": "Fira Code",
+        "customizeUI.font.regular": "Hack",
         "customizeUI.font.monospace": "Fira Code",
-        "customizeUI.activityBar": "regular",
-        "customizeUI.listRowHeight": 20,
+        "customizeUI.activityBar": "wide",
+        "customizeUI.activityBarHideSettings": true,
+        "customizeUI.listRowHeight": 12,
         "customizeUI.fontSizeMap": {
-            "13px": "13px",
-            "tab-title": "12px"
-            // "monospace": "8px"
+            "13px": "11px",
+            "tab-title": "12px",
+            "monospace": "8px"
         },
         "workbench.tree.renderIndentGuides": "none",
         //language especific - dart //
@@ -159,12 +160,6 @@
             "editor.wordBasedSuggestions": false
         },
         "dart.flutterSdkPath": "/home/passaglia/Documentos/flutter",
-        //indent raibow: =========================================
-        "indentRainbow.includedLanguages": [
-            "dart",
-            "php",
-            "JSON"
-        ],
 
         // highligh-tree
         "todo-tree.tree.showScanModeButton": false,
@@ -197,5 +192,7 @@
         "window.enableMenuBarMnemonics": false,
         "dart.debugExternalLibraries": false,
         "dart.debugSdkLibraries": false,
+        "security.workspace.trust.enabled": true,
+        "editor.renderControlCharacters": true,
 
     }
