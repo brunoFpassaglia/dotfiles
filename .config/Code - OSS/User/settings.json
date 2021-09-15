@@ -29,11 +29,10 @@
         //=============workbench========================//
         "workbench.editor.revealIfOpen": true,
         "workbench.editor.highlightModifiedTabs": true,
-        "workbench.statusBar.feedback.visible": false,
-        "workbench.tree.indent": 8,
+        "workbench.tree.indent": 4,
         "workbench.editor.enablePreview": false,
         "workbench.colorTheme": "Cobalt2",
-        "workbench.editor.tabSizing": "fit",
+        "workbench.editor.tabSizing": "shrink",
         "workbench.editor.closeOnFileDelete": true,
         "workbench.colorCustomizations": {
             "editorRuler.foreground": "#bb0000",
@@ -98,9 +97,7 @@
         "vim.foldfix": true,
         // ===========end of vim extensions===========//
         "keyboard.dispatch": "keyCode",
-        "intelephense.diagnostics.undefinedSymbols": false,
-        "terminal.integrated.rendererType": "dom",
-        "open-in-browser.default": "chromium",
+        // "intelephense.diagnostics.undefinedSymbols": false,
         "eslint.validate": [
             "javascript",
             "javascriptreact",
@@ -110,10 +107,8 @@
             "vue-html": "html",
             "vue": "html"
         },
-        "git.confirmSync": false,
-        "diffEditor.renderSideBySide": false,
-        "gitlens.mode.active": "review",
-        "vetur.format.defaultFormatter.js": "vscode-typescript",
+        // "gitlens.mode.active": "review",
+        // "vetur.format.defaultFormatter.js": "vscode-typescript",
         "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
         "indentRainbow.colors": [
             "rgba(16,16,16,0.2)",
@@ -126,10 +121,10 @@
             "rgba(16,16,16,0.9)",
             "rgba(16,16,16,1.0)"
         ],
-        "vetur.format.defaultFormatter.html": "js-beautify-html",
-        "customizeUI.font.regular": "Hack",
+        // "vetur.format.defaultFormatter.html": "js-beautify-html",
+        "customizeUI.font.regular": "Fira Code",
         "customizeUI.font.monospace": "Fira Code",
-        "customizeUI.activityBar": "wide",
+        "customizeUI.activityBar": "bottom",
         "customizeUI.activityBarHideSettings": true,
         "customizeUI.listRowHeight": 12,
         "customizeUI.fontSizeMap": {
@@ -182,17 +177,15 @@
                 "gutterIcon": true
             }
         },
-
         // error lens
         "errorLens.fontSize": "10px",
         "workbench.editor.decorations.badges": true,
         "dart.showSkippedTests": true,
-        "workbench.startupEditor": "newUntitledFile",
+        "workbench.startupEditor": "welcomePage",
         "window.customMenuBarAltFocus": false,
         "window.enableMenuBarMnemonics": false,
         "dart.debugExternalLibraries": false,
         "dart.debugSdkLibraries": false,
         "security.workspace.trust.enabled": true,
         "editor.renderControlCharacters": true,
-
     }
