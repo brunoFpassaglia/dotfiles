@@ -44,12 +44,13 @@
     //=============workbench========================//
     "workbench.editor.revealIfOpen": true,
     "workbench.editor.highlightModifiedTabs": true,
-    "workbench.tree.indent": 6,
+    "workbench.tree.indent": 12,
     "workbench.editor.enablePreview": false,
     "workbench.colorTheme": "Cobalt2",
     "workbench.editor.tabSizing": "shrink",
     "workbench.editor.closeOnFileDelete": true,
     "workbench.colorCustomizations": {
+        "dart.flutterUiGuides": "#00ff22c4",
         "editorRuler.foreground": "#bb0000",
         "editorOverviewRuler.border": "#0000",
         "scrollbarSlider.background": "#FFFF",
@@ -82,6 +83,7 @@
     "scm.defaultViewMode": "tree",
     //===================end of theme==================//
     //=================vim extension keybindings========//
+    "vim.leader": "<space>",
     "vim.insertModeKeyBindings": [
         {
             "before": [
@@ -181,7 +183,7 @@
     "window.customMenuBarAltFocus": false,
     "window.enableMenuBarMnemonics": false,
     "dart.debugExternalLibraries": true,
-    "dart.debugSdkLibraries": true,
+    "dart.debugSdkLibraries": false,
     "extensions.supportUntrustedWorkspaces": {
         "iocave.monkey-patch": {
             "supported": true
@@ -193,7 +195,7 @@
     "editor.cursorSmoothCaretAnimation": true,
     "intelephense.format.braces": "k&r",
     "git.inputValidationLength": 110,
-    "terminal.integrated.tabs.location": "left",
+    "terminal.integrated.tabs.location": "right",
     //indent rainbow
     "indentRainbow.colors": [
         "rgba(255,255,64,0.05)",
@@ -205,4 +207,51 @@
     "files.associations": {
         "*.php": "php"
     },
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "[ ]",
+        "[x]"
+    ],
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.tabs.showActiveTerminal": "always",
+    // "terminal.integrated.tabs.local"
+    "terminal.integrated.cwd": "/home/passaglia/Documentos/projects",
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "zsh"
+        },
+        "fish": {
+            "path": "fish"
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        },
+        "api": {
+            "path": "zsh",
+            "icon": "radio-tower",
+            "color": "terminal.ansiCyan",
+            "overrideName": true,
+        },
+        "mobile": {
+            "path": "zsh",
+            "icon": "device-mobile",
+            "color": "terminal.ansiRed",
+            "overrideName": true,
+        },
+    },
+    "dart.debugExternalPackageLibraries": true,
 }

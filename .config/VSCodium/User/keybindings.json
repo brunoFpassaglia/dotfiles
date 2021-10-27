@@ -112,7 +112,7 @@
         "when": "inQuickOpen"
     },
     {
-        "key": "ctrl+alt+.",
+        "key": "ctrl+.",
         "command": "keyboard-quickfix.openQuickFix"
     },
     {
@@ -215,6 +215,14 @@
         "key": "escape escape",
         "command": "-workbench.action.exitZenMode",
         "when": "inZenMode"
+    },
+    {
+        "key": "alt+4",
+        "command": "workbench.action.focusFourthEditorGroup"
+    },
+    {
+        "key": "ctrl+4",
+        "command": "-workbench.action.focusFourthEditorGroup"
     }
 ]
 
