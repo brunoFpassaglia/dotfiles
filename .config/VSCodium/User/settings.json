@@ -19,8 +19,8 @@
     "editor.cursorBlinking": "phase",
     "editor.minimap.enabled": false,
     "editor.cursorStyle": "line",
-    "editor.fontFamily": "Fira Code",
-    "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
+    "editor.fontFamily": "Fira Code", // &&  0000 @
+    "editor.fontLigatures": "true",
     "editor.renderWhitespace": "trailing",
     "editor.quickSuggestionsDelay": 100,
     "editor.cursorWidth": 2,
@@ -28,7 +28,7 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.detectIndentation": false,
     "editor.lineHeight": 18,
-    "editor.fontWeight": "400",
+    "editor.fontWeight": "300",
     "editor.rulers": [
         80,
         120
