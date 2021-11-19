@@ -7,10 +7,13 @@
     "customizeUI.listRowHeight": 20,
     "customizeUI.moveStatusbar": true,
     "customizeUI.fontSizeMap": {
-        "13px": "12px",
         "tab-title": "10px",
         // "monospace": "8px",
-        // "11px": "10px"
+        "11px": "10px",
+        "12px": "10px",
+        "13px": "12px",
+        "14px": "10px",
+        "15px": "10px"
     },
     //=================editor====================
     "debug.console.fontFamily": "Source Code Pro",
@@ -77,9 +80,11 @@
     "vsicons.dontShowNewVersionMessage": true,
     //=======================theme==================//
     "window.menuBarVisibility": "hidden",
+    "terminal.integrated.lineHeight": 1.5,
     "terminal.integrated.fontFamily": "Fira Code",
-    "terminal.integrated.fontSize": 12,
-    "debug.console.fontSize": 13,
+    "terminal.integrated.fontWeight": "400",
+    "terminal.integrated.fontSize": 11,
+    "debug.console.fontSize": 12,
     "scm.defaultViewMode": "tree",
     //===================end of theme==================//
     //=================vim extension keybindings========//
@@ -220,7 +225,7 @@
     "terminal.integrated.defaultProfile.linux": "zsh",
     "terminal.integrated.tabs.showActiveTerminal": "always",
     // "terminal.integrated.tabs.local"
-    "terminal.integrated.cwd": "/home/passaglia/Documentos/projects",
+    // "terminal.integrated.cwd": "",
     "terminal.integrated.profiles.linux": {
         "bash": {
             "path": "bash",
@@ -254,4 +259,6 @@
         },
     },
     "dart.debugExternalPackageLibraries": true,
+    // c#
+    "omnisharp.useGlobalMono": "never"
 }

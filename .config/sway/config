@@ -299,7 +299,7 @@ include /etc/sway/config.d/*
 
 ##default floating windows
 for_window [title="^Android Emulator - .+$"] {
-	resize set width 23 ppt
+	resize set width 20 ppt
 }
 	
 for_window [app_id="galculator"] floating enable
