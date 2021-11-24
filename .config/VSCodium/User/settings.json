@@ -79,7 +79,7 @@
     "explorer.openEditors.visible": 5,
     "vsicons.dontShowNewVersionMessage": true,
     //=======================theme==================//
-    "window.menuBarVisibility": "hidden",
+    "window.menuBarVisibility": "toggle",
     "terminal.integrated.lineHeight": 1.5,
     "terminal.integrated.fontFamily": "Fira Code",
     "terminal.integrated.fontWeight": "400",
