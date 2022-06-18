@@ -73,7 +73,7 @@ bindsym $mod+Print exec grim -g "$(slurp)" - | wl-copy
 
 # Start your launcher
 #	bindsym $mod+d exec $menu
-bindsym $mod+d exec bemenu-run -i -p 'exec:' --fn 'Hack 10'
+bindsym $mod+d exec bemenu-run -i -p 'exec:' --fn 'Hack 12'
 bindsym $mod+Shift+d exec j4-dmenu-desktop --term='alacritty -e' --dmenu='bemenu -i -p "apps:"' 
 
 # Drag floating windows by holding down $mod and left mouse button.
@@ -290,7 +290,7 @@ input "type:keyboard" {
 	xkb_layout us,br
 		xkb_variant ,abnt2
 		xkb_options caps:escape_shifted_capslock,grp:sclk_toggle
-	repeat_delay 300
+	repeat_delay 200
 	repeat_rate 45
 	xkb_numlock enable
 }

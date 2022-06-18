@@ -32,6 +32,18 @@ export DOTNET_ROOT="/usr/share/dotnet"
 #export XDEBUG_SESSION=1
 #export SDL_VIDEODRIVER="wayland"
 #export GDK_BACKEND="wayland"
+export BEMENU_OPTS="--fn 'Hack 12'\
+	--nb '#568bbf'\
+	--tb '#568bbf'\
+	--hb '#ffffff'\
+	--sb '#568bbf'\
+	--fb '#568bbf'\
+	--tf '#0B1C2C'\
+	--ff '#ffffff'\
+	--nf '#0B1C2C'\
+	--hf '#0B1C2C'\
+	--sf '#0B1C2C'\
+"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,

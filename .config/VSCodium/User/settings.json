@@ -31,7 +31,7 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.detectIndentation": false,
     "editor.lineHeight": 18,
-    "editor.fontWeight": "300",
+    "editor.fontWeight": "400",
     "editor.rulers": [
         80,
         120
@@ -39,7 +39,6 @@
     "editor.wrappingIndent": "deepIndent",
     "editor.wordWrapColumn": 80,
     "editor.lineNumbers": "relative",
-    "editor.renderIndentGuides": false,
     "editor.wordBasedSuggestions": false,
     "debug.toolBarLocation": "docked",
     "errorLens.gutterIconSet": "defaultOutline",
@@ -83,7 +82,7 @@
     "terminal.integrated.lineHeight": 1.5,
     "terminal.integrated.fontFamily": "Fira Code",
     "terminal.integrated.fontWeight": "400",
-    "terminal.integrated.fontSize": 11,
+    "terminal.integrated.fontSize": 12,
     "debug.console.fontSize": 12,
     "scm.defaultViewMode": "tree",
     //===================end of theme==================//
@@ -100,6 +99,25 @@
             ]
         }
     ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "'",
+            ],
+            "after": [
+                "<esc>","`",">","a","'","<esc>","`","<","i","'","<esc>"
+            ]
+        },{
+            "before": [
+                "<leader>",
+                "\"",
+            ],
+            "after": [
+                "<esc>","`",">","a","\"","<esc>","`","<","i","\"","<esc>"
+            ]
+        },
+    ],
     "vim.handleKeys": {
         "<C-e>": false,
         "<C-d>": true,
@@ -113,6 +131,33 @@
             ],
             "commands": [
                 ":wq",
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "h"
+            ],
+            "commands": [
+                ":tabp"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "l"
+            ],
+            "commands": [
+                ":tabn"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "n"
+            ],
+            "commands": [
+                ":tabnew"
             ]
         }
     ],
@@ -260,5 +305,12 @@
     },
     "dart.debugExternalPackageLibraries": true,
     // c#
-    "omnisharp.useGlobalMono": "never"
+    "omnisharp.useGlobalMono": "never",
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "zenMode.hideLineNumbers": false,
+    "editor.guides.indentation": false,
+    "vim.statusBarColors.commandlineinprogress": "#ffffff",
+    "timeline.excludeSources": [
+        "timeline.localHistory"
+    ],
 }
