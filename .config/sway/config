@@ -262,14 +262,14 @@ client.focused	#568bbf	#568bbf	#FFFFFF
 client.unfocused	#0B1C2C	#0B1C2C	#FFFFFF
 client.focused_inactive	#0B1C2C	#0B1C2C	#FFFFFF
 ## gaps
-gaps inner 13
-gaps outer -12
+gaps inner 4
+gaps outer -8
 
 ## shortcuts
 bindsym XF86MonBrightnessDown exec light -U 10
 bindsym XF86MonBrightnessUp exec light -A 10
-bindsym --locked XF86AudioRaiseVolume exec amixer -q set Master 5%+
-bindsym --locked XF86AudioLowerVolume exec amixer -q set Master 5%-
+bindsym --locked XF86AudioRaiseVolume exec pamixer -i 5
+bindsym --locked XF86AudioLowerVolume exec pamixer -d 5
 bindsym --locked XF86AudioPlay exec playerctl -p spotify play-pause
 bindsym --locked XF86AudioNext exec playerctl -p spotify next
 bindsym --locked XF86AudioPrev exec playerctl -p spotify previous

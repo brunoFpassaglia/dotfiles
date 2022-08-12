@@ -233,7 +233,7 @@
     "window.customMenuBarAltFocus": false,
     "window.enableMenuBarMnemonics": false,
     "dart.debugExternalLibraries": true,
-    "dart.debugSdkLibraries": false,
+    "dart.debugSdkLibraries": true,
     "extensions.supportUntrustedWorkspaces": {
         "iocave.monkey-patch": {
             "supported": true
@@ -313,4 +313,5 @@
     "timeline.excludeSources": [
         "timeline.localHistory"
     ],
+    "editor.colorDecorators": false,
 }
