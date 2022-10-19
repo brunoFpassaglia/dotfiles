@@ -32,17 +32,23 @@ export DOTNET_ROOT="/usr/share/dotnet"
 #export XDEBUG_SESSION=1
 #export SDL_VIDEODRIVER="wayland"
 #export GDK_BACKEND="wayland"
-export BEMENU_OPTS="--fn 'Hack 12'\
-	--nb '#568bbf'\
+export BEMENU_OPTS="--fn 'Hack 20'\
 	--tb '#568bbf'\
-	--hb '#ffffff'\
-	--sb '#568bbf'\
+	--tf '#ffffff'\
 	--fb '#568bbf'\
-	--tf '#0B1C2C'\
 	--ff '#ffffff'\
-	--nf '#0B1C2C'\
+	--cb '#568bbf'\
+	--cf '#ffffff'\
+	--nb '#0b1c2c'\
+	--nf '#ffffff'\
+	--hb '#f4ebeb'\
+	--hf '#ffffff'\
+	--sb '#568bbf'\
 	--hf '#0B1C2C'\
 	--sf '#0B1C2C'\
+	--ab '#0b1c2c'\
+	--monitor 'all'\
+	--bottom
 "
 
 # Set name of the theme to load --- if set to "random", it will
