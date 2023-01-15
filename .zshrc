@@ -32,7 +32,8 @@ export DOTNET_ROOT="/usr/share/dotnet"
 #export XDEBUG_SESSION=1
 #export SDL_VIDEODRIVER="wayland"
 #export GDK_BACKEND="wayland"
-export BEMENU_OPTS="--fn 'Hack 20'\
+#export MESA_DISK_CACHE_SINGLE_FILE=1
+export BEMENU_OPTS="--fn 'Hack 14'\
 	--tb '#568bbf'\
 	--tf '#ffffff'\
 	--fb '#568bbf'\
@@ -157,6 +158,8 @@ alias testf='php artisan test --filter'
 alias atestf='./vendor/bin/phpunit'
 alias dots='/usr/bin/git --git-dir=/home/passaglia/.dotfiles --work-tree=/home/passaglia'
 alias boostpf='sudo cpupower frequency-set -g performance'
+alias mhd='udisksctl mount -b /dev/sdb6'
+alias unmhd='udisksctl unmount -b /dev/sdb6'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

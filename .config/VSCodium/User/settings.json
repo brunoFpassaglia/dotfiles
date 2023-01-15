@@ -310,8 +310,5 @@
     "zenMode.hideLineNumbers": false,
     "editor.guides.indentation": false,
     "vim.statusBarColors.commandlineinprogress": "#ffffff",
-    "timeline.excludeSources": [
-        "timeline.localHistory"
-    ],
     "editor.colorDecorators": false,
 }
