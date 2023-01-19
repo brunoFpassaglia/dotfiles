@@ -260,7 +260,7 @@ bar {
 
 #border
 for_window [tiling] border pixel 2
-client.focused	#FFFFFF	#FFFFFF	#0B1C2C #7FFFD4
+client.focused	#568bbf	#568bbf	#FFFFFF #7FFFD4
 client.unfocused	#0B1C2C	#0B1C2C	#FFFFFF
 client.focused_inactive	#0B1C2C	#0B1C2C	#FFFFFF
 ## gaps
