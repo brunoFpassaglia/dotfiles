@@ -34,6 +34,7 @@ export MOZ_ENABLE_WAYLAND=1
 #export SDL_VIDEODRIVER="wayland"
 #export GDK_BACKEND="wayland"
 #export MESA_DISK_CACHE_SINGLE_FILE=1
+export KEYTIMEOUT=1
 export BEMENU_OPTS="--fn 'Hack 14'\
 	--tb '#568bbf'\
 	--tf '#ffffff'\
