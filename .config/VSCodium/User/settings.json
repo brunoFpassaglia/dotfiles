@@ -242,7 +242,7 @@
             "supported": true
         },
     },
-    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorSmoothCaretAnimation": "on",
     "intelephense.format.braces": "k&r",
     "git.inputValidationLength": 110,
     "terminal.integrated.tabs.location": "right",

@@ -29,6 +29,7 @@ export GTK_THEME="Adwaita:dark"
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 export PATH="$PATH:~/dotnet/tools"
 export DOTNET_ROOT="/usr/share/dotnet"
+export MOZ_ENABLE_WAYLAND=1
 #export XDEBUG_SESSION=1
 #export SDL_VIDEODRIVER="wayland"
 #export GDK_BACKEND="wayland"

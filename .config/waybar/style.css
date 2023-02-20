@@ -169,6 +169,9 @@
     /* No styles */
     color: red;
 }
+#keyboard-state label.capslock.locked {
+    color: red;
+}
 
 #custom-spotify {
     color: rgb(102, 220, 105);
