@@ -162,6 +162,7 @@ alias dots='/usr/bin/git --git-dir=/home/passaglia/.dotfiles --work-tree=/home/p
 alias boostpf='sudo cpupower frequency-set -g performance'
 alias mhd='udisksctl mount -b /dev/sdb6'
 alias unmhd='udisksctl unmount -b /dev/sdb6'
+alias blue='sudo systemctl start bluetooth.service'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

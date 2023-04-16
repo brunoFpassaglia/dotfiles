@@ -72,7 +72,7 @@
         "errorLens.infoBackground": "#fff0",
         "errorLens.infoMessageBackground": "#fff2",
         "errorLens.hintMessageBackground": "#fff2",
-        "errorLens.hintBackground": "#fff0",
+        "errorLens.hintBackground": "#fff0"
     },
     //======end of workbench========================//
     "explorer.openEditors.visible": 5,
@@ -80,9 +80,10 @@
     //=======================theme==================//
     "window.menuBarVisibility": "toggle",
     "terminal.integrated.lineHeight": 1.5,
-    "terminal.integrated.fontFamily": "Fira Code",
+    "terminal.integrated.fontFamily": "'Hack Nerd Font'",
     "terminal.integrated.fontWeight": "400",
-    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.gpuAcceleration": "auto",
+    "terminal.integrated.fontSize": 14,
     "debug.console.fontSize": 12,
     "scm.defaultViewMode": "tree",
     //===================end of theme==================//
@@ -103,7 +104,7 @@
         {
             "before": [
                 "<leader>",
-                "'",
+                "'"
             ],
             "after": [
                 "<esc>","`",">","a","'","<esc>","`","<","i","'","<esc>"
@@ -111,17 +112,17 @@
         },{
             "before": [
                 "<leader>",
-                "\"",
+                "\""
             ],
             "after": [
                 "<esc>","`",">","a","\"","<esc>","`","<","i","\"","<esc>"
             ]
-        },
+        }
     ],
     "vim.handleKeys": {
         "<C-e>": false,
         "<C-d>": true,
-        "<C-b>": false,
+        "<C-b>": false
     },
     "vim.normalModeKeyBindingsNonRecursive": [
         {
@@ -267,8 +268,8 @@
         "[x]"
     ],
     "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
-    "terminal.integrated.defaultProfile.linux": "zsh",
-    "terminal.integrated.tabs.showActiveTerminal": "always",
+    // "terminal.integrated.defaultProfile.linux": "zsh",
+    // "terminal.integrated.tabs.showActiveTerminal": "always",
     // "terminal.integrated.tabs.local"
     // "terminal.integrated.cwd": "",
     "terminal.integrated.profiles.linux": {
@@ -311,4 +312,6 @@
     "editor.guides.indentation": false,
     "vim.statusBarColors.commandlineinprogress": "#ffffff",
     "editor.colorDecorators": false,
+    "terminal.external.linuxExec": "Alacritty",
+    "terminal.explorerKind": "external",
 }
