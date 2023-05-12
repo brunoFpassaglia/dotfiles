@@ -10,6 +10,7 @@
  * Keyframes
  * -------------------------------------------------------------------------- */
 
+@import url("./colors.css");
 @keyframes blink-warning {
     70% {
         color: white;
@@ -45,15 +46,17 @@
     color: white;
     margin: 0;
     padding: 0;
+	font-size: 10pt;
 }
 
 /* The whole bar */
 #waybar {
-    background: #0B1C2C;
-    color: white;
+	opacity: 0.8;
+    background: @background-darker;
+    color: @foreground;
     font-family: Hack Nerd Font, Noto Sans, sans-serif;
     font-size: 12px;
-	border-radius: 50
+	border-bottom: 2px solid @background;
 }
 
 /* Each module */
@@ -80,15 +83,16 @@
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    background-color: #568bbf;
+    background-color: @purple;
+    color: @foreground;
 }
 
 #battery.warning {
-    color: orange;
+    color: @orange;
 }
 
 #battery.critical {
-    color: red;
+    color: @red;
 }
 
 #battery.warning.discharging {
@@ -107,20 +111,21 @@
 }
 
 #clock {
-    font-weight: normal;
-    background-color: #568bbf;
+    font-weight: bold;
+    background-image: linear-gradient(0deg, @purple, @selection);
 }
 
 #cpu {
   /* No styles */
+	color: @green;
 }
 
 #cpu.warning {
-    color: orange;
+    color: @orange;
 }
 
 #cpu.critical {
-    color: red;
+    color: @red;
 }
 
 #memory {
@@ -130,25 +135,25 @@
 }
 
 #backlight.bright { 
-    color: orange;
+    color: @orange;
 }
 
 #backlight.dark {
-    color: white;
+    color: @foreground;
 }
 
 #memory.warning {
-    color: orange;
+    color: @orange;
 }
 
 #memory.critical {
-    color: red;
+    color: @red;
     animation-name: blink-critical;
     animation-duration: 2s;
 }
 
 #mode {
-    background-color: #568bbf;
+    background-color: @purple;
     /* To compensate for the top border and still have vertical centering */
     padding-bottom: 2px;
 }
@@ -158,7 +163,7 @@
 }
 
 #network.disconnected {
-    color: orange;
+    color: @red;
 }
 
 #pulseaudio {
@@ -167,10 +172,13 @@
 
 #pulseaudio.muted {
     /* No styles */
-    color: red;
+    color: @red;
 }
 #keyboard-state label.capslock.locked {
-    color: red;
+    color: @pink;
+}
+#keyboard-state label.numlock.locked {
+    color: @pink;
 }
 
 #custom-spotify {
@@ -179,10 +187,11 @@
 
 #temperature {
     /* No styles */
+    color: @cyan;
 }
 
 #temperature.critical {
-    color: red;
+    color: @red;
 }
 
 #tray {
@@ -193,28 +202,27 @@
     font-weight: normal;
 }
 
+
 #workspaces button {
-    border-top: 2px solid transparent;
-    /* To compensate for the top border and still have vertical centering */
-    padding-bottom: 2px;
-    padding-left: 5px;
-    padding-right: 5px;
-    color: white;
+    padding: 0 10px;
+    background: @background;
+    color: @foreground;
+}
+
+#workspaces button.active {
+    background-image: linear-gradient(0deg, @purple, @selection);
 }
 
 #workspaces button.focused {
-    border-color: #4c7899;
-    color: white;
-    background-color: #568bbf;
+    background-image: linear-gradient(0deg, @purple, @selection);
 }
 
 #workspaces button.visible {
-    border-color: #4c7899;
-    background-color: #568bbf;
+    background-image: linear-gradient(0deg, @purple, @selection);
 }
 
 #workspaces button.urgent {
-    border-color: #c9545d;
-    color: #c9545d;
+    border-color: @red;
+    color: @red;
 }
 

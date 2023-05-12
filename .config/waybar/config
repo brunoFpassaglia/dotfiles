@@ -19,10 +19,10 @@
     "height": 10,
 
     "modules-left": [
+		"keyboard-state",
         "sway/workspaces",
         "clock#time",
         "clock#date",
-		"keyboard-state",
 		"sway/language",
     ],
 	"modules-center": [
@@ -87,7 +87,7 @@
 
     "memory": {
         "interval": 5,
-        "format": " {}%", // Icon: memory
+        "format": "󰍛 {}%", // Icon: memory
         "states": {
             "warning": 70,
             "critical": 90
@@ -165,7 +165,7 @@
     },
 
 	"sway/language": {
-      "format": "{flag}  ", // Icon: keyboard
+      "format": "{short}  ", // Icon: keyboard
 		"tooltip": false,
 	},
 
@@ -178,9 +178,11 @@
             "dark": 0
         }
 	},
+
 	"keyboard-state": {
 		"capslock": true,
-		"format": "{name} {icon}",
+		"numlock": true,
+		"format": "{name} {icon} ",
 		"format-icons": {
 			"locked": "",
 			"unlocked": " "

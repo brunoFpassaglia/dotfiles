@@ -1,4 +1,4 @@
-# Default config for sway
+
 #
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
@@ -17,11 +17,11 @@ set $right l
 set $term alacritty
 
 #wallpaper
-output eDP-1 bg /home/passaglia/docs/Imagens/wallpapers/arch.png stretch
-output HDMI-A-1 bg /home/passaglia/docs/Imagens/wallpapers/arch.png fill
+output eDP-1 bg /home/passaglia/Downloads/wallpaper.jpg stretch
+output HDMI-A-1 bg /home/passaglia/Downloads/wallpaper.jpg stretch
 output eDP-1 pos 0 0 res 1366x768
 output HDMI-A-1 pos 1366 0 res 2560x1080
-
+#
 #font
 font pango:Fira Code Medium 8
 ### Output configuration
@@ -258,7 +258,7 @@ mode "$display" {
 bindsym $mod+p mode "$display"
 
 ## 
-set $lock swaylock -f --image /home/passaglia/docs/Imagens/wallpapers/working-pattern-internet-abstract-1089438.jpg -s stretch
+set $lock swaylock -f --image /home/passaglia/Downloads/lock2.jpg -s stretch
 set $mode_system System (l) lock, (s) suspend, (r) reboot, (Shift+s) shutdown (h) hibernate
 mode "$mode_system" {
     bindsym l exec $lock, mode "default"
@@ -297,8 +297,8 @@ gaps outer -8
 ## shortcuts
 bindsym XF86MonBrightnessDown exec light -U 10
 bindsym XF86MonBrightnessUp exec light -A 10
-bindsym --locked XF86AudioRaiseVolume exec pamixer -i 5
-bindsym --locked XF86AudioLowerVolume exec pamixer -d 5
+bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
 bindsym --locked XF86AudioPlay exec playerctl -p spotify play-pause
 bindsym --locked XF86AudioNext exec playerctl -p spotify next
 bindsym --locked XF86AudioPrev exec playerctl -p spotify previous

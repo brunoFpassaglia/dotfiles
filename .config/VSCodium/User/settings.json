@@ -1,20 +1,4 @@
 {
-    "customizeUI.activityBarHideSettings": true,
-    "customizeUI.titleBar": "regular",
-    "customizeUI.font.regular": "Hack",
-    "customizeUI.font.monospace": "Hack",
-    "customizeUI.activityBar": "bottom",
-    "customizeUI.listRowHeight": 20,
-    "customizeUI.moveStatusbar": true,
-    "customizeUI.fontSizeMap": {
-        "tab-title": "10px",
-        // "monospace": "8px",
-        "11px": "10px",
-        "12px": "10px",
-        "13px": "12px",
-        "14px": "10px",
-        "15px": "10px"
-    },
     //=================editor====================
     "debug.console.fontFamily": "Source Code Pro",
     "debug.console.lineHeight": 20,
@@ -27,7 +11,7 @@
     "editor.renderWhitespace": "trailing",
     "editor.quickSuggestionsDelay": 100,
     "editor.cursorWidth": 2,
-    "editor.fontSize": 12,
+    "editor.fontSize": 14,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.detectIndentation": false,
     "editor.lineHeight": 18,
@@ -42,13 +26,12 @@
     "editor.wordBasedSuggestions": false,
     "debug.toolBarLocation": "docked",
     "errorLens.gutterIconSet": "defaultOutline",
-    //============end of editor==================//
     //=============workbench========================//
     "workbench.editor.revealIfOpen": true,
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.tree.indent": 12,
     "workbench.editor.enablePreview": false,
-    "workbench.colorTheme": "Cobalt2",
+    "workbench.colorTheme": "Dracula",
     "workbench.editor.tabSizing": "shrink",
     "workbench.editor.closeOnFileDelete": true,
     "workbench.colorCustomizations": {
@@ -59,24 +42,12 @@
         "activityBarBadge.foreground": "#FFF",
         "editorGroup.border": "#FFF",
         "badge.background": "#FFF",
-        "[Cobalt2]": {
-            "editor.background": "#0B1C2C",
-            "activityBar.foreground": "#FFF",
-            "terminal.background": "#0B1C2C",
-            "menu.background": "#0B1C2C",
-            "sideBar.background": "#0B1C2C",
-            "panel.background": "#0B1C2C",
-            "debugConsole.errorForeground": "#ff3c3c",
-            "debugConsole.infoForeground": "#00c3ff"
-        },
         "errorLens.infoBackground": "#fff0",
         "errorLens.infoMessageBackground": "#fff2",
         "errorLens.hintMessageBackground": "#fff2",
         "errorLens.hintBackground": "#fff0"
     },
-    //======end of workbench========================//
     "explorer.openEditors.visible": 5,
-    "vsicons.dontShowNewVersionMessage": true,
     //=======================theme==================//
     "window.menuBarVisibility": "hidden",
     "terminal.integrated.lineHeight": 1.5,
@@ -86,7 +57,6 @@
     "terminal.integrated.fontSize": 14,
     "debug.console.fontSize": 12,
     "scm.defaultViewMode": "tree",
-    //===================end of theme==================//
     //=================vim extension keybindings========//
     "vim.leader": "<space>",
     "vim.insertModeKeyBindings": [
@@ -165,7 +135,6 @@
     "vim.highlightedyank.enable": true,
     "vim.useCtrlKeys": true,
     "vim.foldfix": true,
-    // ===========end of vim extensions===========//
     "keyboard.dispatch": "keyCode",
     // "intelephense.diagnostics.undefinedSymbols": false,
     "eslint.validate": [
@@ -182,9 +151,8 @@
     "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
     // "vetur.format.defaultFormatter.html": "js-beautify-html",
     "workbench.tree.renderIndentGuides": "none",
-    //language especific - dart //
+    // =====================language especific - dart============== //
     "dart.previewFlutterUiGuides": true,
-    "workbench.iconTheme": "vscode-icons",
     "dart.devToolsBrowser": "default",
     "dart.embedDevTools": false,
     "dart.flutterCreateOrganization": "com.brunoFpassaglia",
@@ -235,14 +203,6 @@
     "window.enableMenuBarMnemonics": false,
     "dart.debugExternalLibraries": true,
     "dart.debugSdkLibraries": true,
-    "extensions.supportUntrustedWorkspaces": {
-        "iocave.monkey-patch": {
-            "supported": true
-        },
-        "iocave.customize-ui": {
-            "supported": true
-        },
-    },
     "editor.cursorSmoothCaretAnimation": "on",
     "intelephense.format.braces": "k&r",
     "git.inputValidationLength": 110,
@@ -317,4 +277,5 @@
     "intelephense.environment.documentRoot": "${workspaceFolder}/backend",
     "debug.allowBreakpointsEverywhere": true,
     "terminal.integrated.tabs.enabled": false,
+    "workbench.iconTheme": "material-icon-theme",
 }
