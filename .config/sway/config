@@ -74,7 +74,7 @@ bindsym $mod+Print exec grim -g "$(slurp)" - | wl-copy
 # Start your launcher
 #	bindsym $mod+d exec $menu
 bindsym $mod+d exec bemenu-run -i -p 'exec:' --fn 'Hack 14'
-bindsym $mod+Shift+d exec j4-dmenu-desktop --term='alacritty -e' --dmenu='bemenu -i -p "apps:"' 
+bindsym $mod+Shift+d exec j4-dmenu-desktop --dmenu='bemenu -i -p "apps:"'
 
 # Drag floating windows by holding down $mod and left mouse button.
 # Resize them with right mouse button + $mod.

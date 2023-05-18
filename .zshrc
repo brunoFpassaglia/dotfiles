@@ -10,11 +10,11 @@ export ZSH="$HOME/.oh-my-zsh"
 #export ZSH="/home/passaglia/.oh-my-zsh"
 
 # path to flutter
-export PATH="$PATH:/home/passaglia/Documentos/flutter/bin"
-export PATH="$PATH:/opt/flutter/bin"
+export PATH="$PATH:/home/passaglia/flutter/flutter/bin"
+#export PATH="$PATH:/opt/flutter/bin"
 export LIBSEAT_BACKEND="logind"
-export ANDROID_SDK_ROOT="/home/passaglia/Android"
-export PATH="~/.npm-global/bin:$PATH:$ANDROID_SDK_ROOT"
+#export ANDROID_SDK_ROOT="/home/passaglia/Android"
+#export PATH="~/.npm-global/bin:$PATH:$ANDROID_SDK_ROOT"
 export PATH="~/.pub-cache/bin:$PATH"
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 export PATH="~/.local/bin:$PATH"
@@ -22,7 +22,7 @@ export PATH="/home/passaglia/npm-global/bin:$PATH"
 export PATH="/home/passaglia/.node_modules/bin:$PATH"
 export npm_config_prefix="~/.node_modules"
 export PATH="$PATH:/home/passaglia/Android"
-export JAVA_HOME="/usr/lib/jvm/default-runtime"
+#export JAVA_HOME="/usr/lib/jvm/default-runtime"
 #export SUDO_ASKPASS="/usr/bin/dpass.sh"
 export BEMENU_BACKEND="wayland"
 export _JAVA_AWT_WM_NONREPARENTING=1
@@ -36,22 +36,25 @@ export MOZ_ENABLE_WAYLAND=1
 #export MESA_DISK_CACHE_SINGLE_FILE=1
 export KEYTIMEOUT=1
 export BEMENU_OPTS="--fn 'Hack 14'\
-	--tb '#568bbf'\
-	--tf '#ffffff'\
-	--fb '#568bbf'\
-	--ff '#ffffff'\
-	--cb '#568bbf'\
-	--cf '#ffffff'\
-	--nb '#0b1c2c'\
-	--nf '#ffffff'\
-	--hb '#f4ebeb'\
-	--hf '#ffffff'\
-	--sb '#568bbf'\
-	--hf '#0B1C2C'\
-	--sf '#0B1C2C'\
-	--ab '#0b1c2c'\
-	--monitor 'all'\
-	--bottom
+	--list 6\
+	-P '-'\
+	-p 'Exec'\
+	--width-factor '0.4'\
+	--tb '#6272a4'\
+	--tf '#f8f8f2'\
+	--fb '#282a36'\
+	--ff '#f8f8f2'\
+	--nb '#282a36'\
+	--nf '#6272a4'\
+	--ab '#282a36'\
+	--af '#6272a4'\
+	--hb '#44475a'\
+	--hf '#50fa7b'\
+	--sb '#44475a'\
+	--sf '#50fa7b'\
+	--scb '#282a36'\
+	--scf '#ff79c6'\
+	--monitor 'all'
 "
 
 # Set name of the theme to load --- if set to "random", it will

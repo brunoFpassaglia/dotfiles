@@ -11,7 +11,7 @@
     "editor.renderWhitespace": "trailing",
     "editor.quickSuggestionsDelay": 100,
     "editor.cursorWidth": 2,
-    "editor.fontSize": 14,
+    "editor.fontSize": 13,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.detectIndentation": false,
     "editor.lineHeight": 18,
@@ -34,19 +34,19 @@
     "workbench.colorTheme": "Dracula",
     "workbench.editor.tabSizing": "shrink",
     "workbench.editor.closeOnFileDelete": true,
-    "workbench.colorCustomizations": {
-        "dart.flutterUiGuides": "#00ff22c4",
-        "editorRuler.foreground": "#bb0000",
-        "editorOverviewRuler.border": "#0000",
-        "scrollbarSlider.background": "#FFFF",
-        "activityBarBadge.foreground": "#FFF",
-        "editorGroup.border": "#FFF",
-        "badge.background": "#FFF",
-        "errorLens.infoBackground": "#fff0",
-        "errorLens.infoMessageBackground": "#fff2",
-        "errorLens.hintMessageBackground": "#fff2",
-        "errorLens.hintBackground": "#fff0"
-    },
+    // "workbench.colorCustomizations": {
+    //     "dart.flutterUiGuides": "#00ff22c4",
+    //     "editorRuler.foreground": "#bb0000",
+    //     "editorOverviewRuler.border": "#0000",
+    //     "scrollbarSlider.background": "#FFFF",
+    //     "activityBarBadge.foreground": "#FFF",
+    //     "editorGroup.border": "#FFF",
+    //     "badge.background": "#FFF",
+    //     "errorLens.infoBackground": "#fff0",
+    //     "errorLens.infoMessageBackground": "#fff2",
+    //     "errorLens.hintMessageBackground": "#fff2",
+    //     "errorLens.hintBackground": "#fff0"
+    // },
     "explorer.openEditors.visible": 5,
     //=======================theme==================//
     "window.menuBarVisibility": "hidden",
@@ -172,7 +172,7 @@
         "editor.tabCompletion": "onlySnippets",
         "editor.wordBasedSuggestions": false
     },
-    "dart.flutterSdkPath": "/home/passaglia/Documentos/flutter",
+    // "dart.flutterSdkPath": "/home/passaglia/Documentos/flutter",
     // highligh-tree
     "todo-tree.tree.showScanModeButton": false,
     "todo-tree.regex.regexCaseSensitive": false,
