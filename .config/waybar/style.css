@@ -155,7 +155,6 @@
 #mode {
     background-color: @purple;
     /* To compensate for the top border and still have vertical centering */
-    padding-bottom: 2px;
 }
 
 #network {

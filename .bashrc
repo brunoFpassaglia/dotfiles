@@ -8,3 +8,4 @@
 alias ls='ls --color=auto'
 export SUDO_ASKPASS="/usr/bin/dpass.sh"
 PS1='[\u@\h \W]\$ '
+. "$HOME/.cargo/env"

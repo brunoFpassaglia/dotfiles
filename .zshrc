@@ -7,10 +7,12 @@
 
 # Path to your oh-my-zsh installation.  
 export ZSH="$HOME/.oh-my-zsh"
+export EDITOR="vim"
 #export ZSH="/home/passaglia/.oh-my-zsh"
 
 # path to flutter
 export PATH="$PATH:/home/passaglia/flutter/flutter/bin"
+export PATH="$PATH:/home/passaglia/Android/Sdk/platform-tools"
 #export PATH="$PATH:/opt/flutter/bin"
 export LIBSEAT_BACKEND="logind"
 #export ANDROID_SDK_ROOT="/home/passaglia/Android"
@@ -18,23 +20,27 @@ export LIBSEAT_BACKEND="logind"
 export PATH="~/.pub-cache/bin:$PATH"
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 export PATH="~/.local/bin:$PATH"
-export PATH="/home/passaglia/npm-global/bin:$PATH"
-export PATH="/home/passaglia/.node_modules/bin:$PATH"
-export npm_config_prefix="~/.node_modules"
+#export PATH="/home/passaglia/npm-global/bin:$PATH"
+#export PATH="/home/passaglia/.node_modules/bin:$PATH"
+#export npm_config_prefix="~/.node_modules"
+export DENO_INSTALL="/home/passaglia/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
 export PATH="$PATH:/home/passaglia/Android"
 #export JAVA_HOME="/usr/lib/jvm/default-runtime"
 #export SUDO_ASKPASS="/usr/bin/dpass.sh"
+export CHROME_EXECUTABLE="/usr/bin/google-chrome-stable"
 export BEMENU_BACKEND="wayland"
 export _JAVA_AWT_WM_NONREPARENTING=1
 export GTK_THEME="Adwaita:dark"
-export PATH="$PATH:~/dotnet/tools"
-export DOTNET_ROOT="/usr/share/dotnet"
 export MOZ_ENABLE_WAYLAND=1
+export XDG_SESSION_TYPE=wayland
+export XDG_CURRENT_DESKTOP=sway
 #export XDEBUG_SESSION=1
 #export SDL_VIDEODRIVER="wayland"
 #export GDK_BACKEND="wayland"
 #export MESA_DISK_CACHE_SINGLE_FILE=1
 export KEYTIMEOUT=1
+export NO_AT_BRIDGE=1
 export BEMENU_OPTS="--fn 'Hack 14'\
 	--list 6\
 	-P '-'\
@@ -157,6 +163,7 @@ source $ZSH/oh-my-zsh.sh
 #alias lla='ls -la'
 #alias lt='ls --tree'
 alias att='sudo pacman -Syu'
+alias pre-commit='python /home/documents/aurPkgs/pre-commit-3.6.0.pyz'
 alias testall='php artisan test'
 alias atestall='./vendor/bin/phpunit'
 alias testf='php artisan test --filter'
@@ -167,6 +174,10 @@ alias mhd='udisksctl mount -b /dev/sdb6'
 alias unmhd='udisksctl unmount -b /dev/sdb6'
 alias blue='sudo systemctl start bluetooth.service'
 alias codium='codium --ozone-platform-hint=auto'
+
+# olly specific aliases
+alias work='cd /home/documents/projects/ollyolly/ollycore'
+alias spstr='supabase start && supabase functions serve --env-file ./supabase/.env.local'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

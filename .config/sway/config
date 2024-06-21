@@ -229,6 +229,8 @@ mode "resize" {
 		bindsym $down resize grow height 10px
 		bindsym $up resize shrink height 10px
 		bindsym $right resize grow width 10px
+	bindsym n resize shrink width 60px
+		bindsym m resize grow width 60px
 
 # Ditto, with arrow keys
 		bindsym Left resize shrink width 10px
@@ -248,7 +250,7 @@ mode "$display" {
 		bindsym a output HDMI-A-1 pos 1366 0 res 1024x768@75Hz
 		bindsym t output HDMI-A-1 pos 1366 0 res 1920x1080@60Hz
 		bindsym s output HDMI-A-1 pos 1366 0 res 1280x1024@75Hz
-		bindsym b output HDMI-A-1 pos 1366 0 res 2560x1080@60Hz
+		bindsym b output HDMI-A-1 pos 1366 0 res 2560x1080@60Hz   
 		bindsym c output HDMI-A-1 disable
 		bindsym l output HDMI-A-1 enable
 
