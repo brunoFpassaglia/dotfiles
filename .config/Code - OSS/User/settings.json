@@ -1,0 +1,366 @@
+{
+    //=================editor====================
+    "debug.console.fontFamily": "Source Code Pro",
+    "debug.console.lineHeight": 20,
+    "editor.matchBrackets": "always",
+    "editor.cursorBlinking": "phase",
+    "editor.minimap.enabled": false,
+    "editor.cursorStyle": "line",
+    "editor.fontFamily": "Fira Code", // &&  0000 @
+    "editor.fontLigatures": "true",
+    "editor.renderWhitespace": "trailing",
+    "editor.quickSuggestionsDelay": 100,
+    "editor.cursorWidth": 2,
+    "editor.fontSize": 13,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.detectIndentation": false,
+    "editor.lineHeight": 18,
+    "editor.fontWeight": "400",
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "editor.wrappingIndent": "deepIndent",
+    "editor.wordWrapColumn": 80,
+    "editor.lineNumbers": "relative",
+    "editor.wordBasedSuggestions": "off",
+    "editor.experimental.useCustomCodeActionMenu": true,
+    "debug.toolBarLocation": "docked",
+    //=============workbench========================//
+    "workbench.editor.revealIfOpen": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.tree.indent": 8,
+    "workbench.editor.enablePreview": false,
+    "workbench.colorTheme": "Dracula",
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.editor.closeOnFileDelete": true,
+    "explorer.openEditors.visible": 5,
+    //=======================theme==================//
+    "window.menuBarVisibility": "hidden",
+    "terminal.integrated.lineHeight": 1.5,
+    "terminal.integrated.fontFamily": "'Hack Nerd Font'",
+    "terminal.integrated.fontWeight": "400",
+    "terminal.integrated.gpuAcceleration": "auto",
+    "terminal.integrated.fontSize": 14,
+    "debug.console.fontSize": 13,
+    "scm.defaultViewMode": "tree",
+    //=================vim extension keybindings========//
+    "vim.leader": "<space>",
+    "vim.operatorPendingModeKeyBindings": [
+        {
+            "before": [
+                "L"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "H"
+            ],
+            "after": [
+                "^"
+            ]
+        }
+    ],
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "'"
+            ],
+            "after": [
+                "<esc>",
+                "`",
+                ">",
+                "a",
+                "'",
+                "<esc>",
+                "`",
+                "<",
+                "i",
+                "'",
+                "<esc>"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "\""
+            ],
+            "after": [
+                "<esc>",
+                "`",
+                ">",
+                "a",
+                "\"",
+                "<esc>",
+                "`",
+                "<",
+                "i",
+                "\"",
+                "<esc>"
+            ]
+        }
+    ],
+    "vim.handleKeys": {
+        "<C-e>": false,
+        "<C-d>": true,
+        "<C-b>": false
+    },
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "g"
+            ],
+            "commands": [
+                "workbench.action.focusPreviousGroup"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                ";"
+            ],
+            "commands": [
+                "workbench.action.focusNextGroup"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t"
+            ],
+            "commands": [
+                "workbench.action.tasks.runTask",
+            ]
+        },
+        {
+            "before": [
+                "Z",
+                "Z"
+            ],
+            "commands": [
+                ":wq",
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "h"
+            ],
+            "commands": [
+                ":tabp"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "l"
+            ],
+            "commands": [
+                ":tabn"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "n"
+            ],
+            "commands": [
+                ":tabnew"
+            ]
+        }
+    ],
+    "vim.highlightedyank.enable": true,
+    "vim.useCtrlKeys": true,
+    "vim.foldfix": true,
+    "keyboard.dispatch": "keyCode",
+    // "intelephense.diagnostics.undefinedSymbols": false,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "vue"
+    ],
+    // "emmet.includeLanguages": {
+    //     "vue-html": "html",
+    //     "vue": "html"
+    // },
+    // "gitlens.mode.active": "review",
+    // "vetur.format.defaultFormatter.js": "vscode-typescript",
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    // "vetur.format.defaultFormatter.html": "js-beautify-html",
+    "workbench.tree.renderIndentGuides": "none",
+    // =====================language especific - dart============== //
+    "emojisense.languages": {
+        "markdown": true,
+        "plaintext": {
+            "markupCompletionsEnabled": false,
+            "emojiDecoratorsEnabled": false
+        },
+        "scminput": true,
+        "git-commit": true,
+        "dart": true
+    },
+    "dart.previewFlutterUiGuides": true,
+    "dart.devToolsBrowser": "chrome",
+    "dart.flutterCreateOrganization": "com.brunoFpassaglia",
+    "dart.enableCompletionCommitCharacters": true,
+    "dart.completeFunctionCalls": true,
+    "dart.useLegacyDebugAdapters": true,
+    "[dart]": {
+        "editor.defaultFormatter": "Dart-Code.dart-code",
+        "editor.formatOnSave": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.suggestOnTriggerCharacters": false,
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": "off",
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "never",
+            "source.organizeImports": "explicit"
+        },
+    },
+    // "dart.flutterSdkPath": "/home/passaglia/Documentos/flutter",
+    // highligh-tree
+    "todo-tree.tree.showScanModeButton": false,
+    "todo-tree.regex.regexCaseSensitive": false,
+    "todo-tree.highlights.customHighlight": {
+        "TODO": {
+            "icon": "check",
+            "borderRadius": "5px",
+            "type": "tag",
+            "background": "grey",
+            "foreground": "white",
+            "opacity": 65
+        },
+        "FIXME": {
+            "opacity": 65,
+            "borderRadius": "5px",
+            "background": "grey",
+            "foreground": "red",
+            "iconColour": "yellow",
+            "gutterIcon": true
+        }
+    },
+    // error lens
+    "errorLens.gutterIconSet": "default",
+    "errorLens.messageBackgroundMode": "none",
+    "errorLens.fontSize": "9px",
+    "workbench.editor.decorations.badges": true,
+    "dart.showSkippedTests": false,
+    "workbench.startupEditor": "welcomePage",
+    "window.customMenuBarAltFocus": false,
+    "window.enableMenuBarMnemonics": false,
+    "dart.debugExternalLibraries": true,
+    "dart.debugSdkLibraries": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "intelephense.format.braces": "k&r",
+    "git.inputValidationLength": 110,
+    "terminal.integrated.tabs.location": "right",
+    //indent rainbow
+    "indentRainbow.colors": [
+        "rgba(255,255,64,0.05)",
+        "rgba(255,127,255,0.05)",
+        "rgba(79,236,236,0.05)"
+    ],
+    "terminal.integrated.scrollback": 10000,
+    "dart_data_class_generator.constructor.required": true,
+    "files.associations": {
+        "*.php": "php"
+    },
+    "blade.format.enable": true,
+    "bladeFormatter.format.enabled": true,
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "[ ]",
+        "[x]"
+    ],
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    // "terminal.integrated.tabs.showActiveTerminal": "always",
+    // "terminal.integrated.tabs.local"
+    // "terminal.integrated.cwd": "",
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "zsh",
+            
+        },
+        "fish": {
+            "path": "fish"
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        },
+        "api": {
+            "path": "zsh",
+            "icon": "radio-tower",
+            "color": "terminal.ansiCyan",
+            "overrideName": true,
+        },
+        "mobile": {
+            "path": "zsh",
+            "icon": "device-mobile",
+            "color": "terminal.ansiRed",
+            "overrideName": true,
+        },
+    },
+    "dart.debugExternalPackageLibraries": true,
+    // c#
+    "omnisharp.useGlobalMono": "never",
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "zenMode.hideLineNumbers": false,
+    "editor.guides.indentation": false,
+    "vim.statusBarColorControl": false,
+    "editor.colorDecorators": false,
+    "terminal.external.linuxExec": "Alacritty",
+    "terminal.explorerKind": "external",
+    "intelephense.environment.documentRoot": "${workspaceFolder}/backend",
+    "debug.allowBreakpointsEverywhere": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "dart.previewSdkDaps": false,
+    "[blade]": {
+        "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+    },
+    "terminal.integrated.automationProfile.linux": {
+
+    },
+    "go.toolsManagement.autoUpdate": true,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+}
